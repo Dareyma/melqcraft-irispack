@@ -1,9 +1,0 @@
-{
-    "maxDepth": 5,
-    "terminate": true,
-    "pieces": [
-        "village/snowy/town_centers/snowy_meeting_point_1",
-        "village/snowy/town_centers/snowy_meeting_point_2",
-        "village/snowy/town_centers/snowy_meeting_point_3"
-    ]
-}

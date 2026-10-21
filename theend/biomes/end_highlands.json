@@ -1,0 +1,17 @@
+{
+  "name": "end_highlands",
+  "derivative": "END_HIGHLANDS",
+  "generators": [
+    {
+      "generator": "end_simple",
+      "min": 0,
+      "max": 1
+    }
+  ],
+  "colors": {
+    "sky": "#000000",
+    "fog": "#0A0A1A",
+    "water": "#3F76E4",
+    "waterFog": "#050533"
+  }
+}

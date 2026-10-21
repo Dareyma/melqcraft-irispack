@@ -13,7 +13,13 @@
   "name": "Overworld",
   "datapackImports": [
   "https://modrinth.com/datapack/dungeons-and-taverns",
-  "https://modrinth.com/datapack/decubed-dungeons"
+  "https://modrinth.com/datapack/decubed-dungeons",
+  "https://modrinth.com/datapack/grim-kingdoms-lost-structures-ruins",
+  "https://modrinth.com/datapack/structory-towers",
+  "https://modrinth.com/datapack/structory",
+  "https://modrinth.com/datapack/reds-more-structures",
+  "https://modrinth.com/datapack/katters-structures",
+  "https://modrinth.com/datapack/ati-structures-vanilla-edition"
   ], 
   "importedStructures": {
     "datapackOverrides": true,

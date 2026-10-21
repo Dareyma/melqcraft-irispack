@@ -1,0 +1,17 @@
+{
+  "name": "The End",
+  "version": 1,
+  "environment": "THE_END",
+  "dimensionHeight": {
+    "min": 0,
+    "max": 256
+  },
+  "logicalHeight": 256,
+  "fluidHeight": 0,
+  "regions": ["end"],
+  "datapackImports": [],
+  "importedStructures": {
+    "datapackOverrides": true,
+    "disabled": []
+  }
+}

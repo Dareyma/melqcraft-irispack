@@ -1,0 +1,11 @@
+{
+  "name": "end_simple",
+  "type": "PLAIN",
+  "style": {
+    "style": "STATIC",
+    "zoom": 1,
+    "exponent": 1
+  },
+  "minHeight": 40,
+  "maxHeight": 70
+}
