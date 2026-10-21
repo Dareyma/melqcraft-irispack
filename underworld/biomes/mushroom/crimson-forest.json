@@ -1,0 +1,147 @@
+{
+  "entitySpawners": [
+    "nether/surface/crimson-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld Crimson Mushroom Swamp",
+  "color": "#AC3448",
+  "rarity": 2,
+  "derivative": "minecraft:crimson_forest",
+  "vanillaDerivative": "minecraft:crimson_forest",
+  "customDerivitives": [
+    {
+      "id": "underworld_mushroom_crimson_forest_e2558e59",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#310508",
+      "fogColor": "#330303",
+      "waterColor": "#D9431D",
+      "waterFogColor": "#7E0F1D",
+      "grassColor": "#B8373C",
+      "foliageColor": "#932D44",
+      "ambientParticle": {
+        "particle": "minecraft:crimson_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "children": [
+    "mushroom/crimson-forest-extended"
+  ],
+  "generators": [
+    {
+      "min": 4,
+      "max": 25,
+      "generator": "plain-cliffs"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:crimson_hyphae"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "zoom": 0.5,
+      "style": {
+        "style": "NOWHERE"
+      },
+      "palette": [
+        {
+          "block": "minecraft:crimson_nylium"
+        }
+      ]
+    },
+    "snippet/biome-palette/warped/netherrack-8-9",
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    {
+      "chance": 0.21,
+      "density": 2,
+      "edit": [
+        "snippet/object-block-replacer/crimson/nether-wart-to-crimson-hyphae",
+        "snippet/object-block-replacer/shared/nether-wart-to-nether-wart"
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/crimson/trees/mushroom/mushclut1",
+        "underworld/crimson/trees/mushroom/mushclut2",
+        "underworld/crimson/trees/mushroom/mushclut3",
+        "underworld/crimson/trees/mushroom/mushclut4",
+        "underworld/crimson/trees/mushroom/mushclut5",
+        "underworld/crimson/trees/mushroom/mushclut6",
+        "underworld/crimson/trees/mushroom/mushclut7",
+        "underworld/crimson/trees/mushroom/mushclut8",
+        "underworld/crimson/trees/mushroom/mushclut9",
+        "underworld/crimson/trees/mushroom/mushclut10"
+      ],
+      "mode": "PAINT",
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    "snippet/object-placer/crimson/mushclut-c0-21",
+    "snippet/object-placer/crimson/mushroom-red-brown-c0-5",
+    "snippet/object-placer/crimson/mushroom-red-brown-c0-5",
+    "snippet/object-placer/crimson/smolshroom-c0-1",
+    "snippet/object-placer/crimson/smolshroom-c0-1"
+  ],
+  "decorators": [
+    "snippet/decorator/warped/blackstone-crimson-buttons-c0-009",
+    {
+      "chance": 0.05,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.11,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:crimson_roots"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "childShrinkFactor": 2.4,
+  "slab": {
+    "palette": [
+      {
+        "weight": 4,
+        "block": "minecraft:air"
+      },
+      {
+        "data": {
+          "waterlogged": false,
+          "type": "bottom"
+        },
+        "block": "minecraft:crimson_slab"
+      },
+      {
+        "weight": 4,
+        "block": "minecraft:air"
+      }
+    ]
+  },
+  "terrain3D": "snippet/terrain-3d/hills/amp22-nowhere-crack448"
+}

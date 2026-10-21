@@ -1,0 +1,143 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Tundra Taiga",
+  "color": "#768C8F",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_tundra_taiga_extended_8a80da9c",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#121A20",
+      "fogColor": "#1B4745",
+      "waterColor": "#567F89",
+      "waterFogColor": "#2A4148",
+      "grassColor": "#697C83",
+      "foliageColor": "#799295",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "min": 45,
+      "max": 97
+    },
+    {
+      "generator": "mountain",
+      "max": 14,
+      "min": 8
+    }
+  ],
+  "wall": "snippet/biome-palette/soul/wall-basalt",
+  "layers": [
+    {
+      "zoom": 0.92,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/soul-soil-2-4",
+    "snippet/biome-palette/soul/basalt-6-18"
+  ],
+  "objects": [
+    {
+      "chance": 0.00256,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/soul/clutter/grave1"
+      ]
+    },
+    "snippet/object-placer/soul/stoneclutt-c0-2",
+    "snippet/object-placer/soul/tredwoodsmol-c0-25",
+    "snippet/object-placer/soul/pine-c0-05",
+    "snippet/object-placer/soul/stump-paint-c0-01",
+    "snippet/object-placer/soul/pumpkins-paint-c0-008"
+  ],
+  "decorators": [
+    {
+      "chance": 0.00195,
+      "zoom": 0.02,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:crimson_roots",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "chance": 0.0069,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.001,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:crimson_roots"
+        }
+      ]
+    },
+    "snippet/decorator/soul/soul-fire-c0-0003",
+    "snippet/decorator/soul/sprouts-soul-fire-c0-00053",
+    {
+      "chance": 0.05,
+      "zoom": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        },
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ],
+      "style": {
+        "style": "FRACTAL_SMOKE"
+      }
+    },
+    {
+      "chance": 0.063,
+      "zoom": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        },
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    "snippet/decorator/soul/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/mountains/amp30-perlin-crack448"
+}

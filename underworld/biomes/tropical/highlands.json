@@ -1,0 +1,178 @@
+{
+  "entitySpawners": [
+    "nether/surface/crimson-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld Tropical Highlands",
+  "color": "#A93C45",
+  "rarity": 1,
+  "derivative": "minecraft:crimson_forest",
+  "vanillaDerivative": "minecraft:crimson_forest",
+  "customDerivitives": [
+    {
+      "id": "underworld_tropical_highlands_2f8472b0",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#2F0706",
+      "fogColor": "#330303",
+      "waterColor": "#E73128",
+      "waterFogColor": "#782120",
+      "grassColor": "#AA353B",
+      "foliageColor": "#801A29",
+      "ambientParticle": {
+        "particle": "minecraft:crimson_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "min": 99,
+      "max": 164,
+      "generator": "mountain"
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    {
+      "zoom": 0.256,
+      "palette": [
+        {
+          "weight": 3,
+          "block": "minecraft:crimson_nylium"
+        },
+        {
+          "block": "minecraft:crimson_nylium"
+        },
+        {
+          "weight": 4,
+          "block": "minecraft:crimson_nylium"
+        }
+      ]
+    },
+    {
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/netherrack-1-3",
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    {
+      "chance": 0.35,
+      "density": 2,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/crimson/clutter/oakclutt1",
+        "underworld/crimson/clutter/oakclutt2",
+        "underworld/crimson/clutter/oakclutt3",
+        "underworld/crimson/clutter/oakclutt4",
+        "underworld/crimson/clutter/oakclutt5",
+        "underworld/crimson/clutter/birchclutt1",
+        "underworld/crimson/clutter/birchclutt2",
+        "underworld/crimson/clutter/birchclutt3",
+        "underworld/crimson/clutter/birchclutt4",
+        "underworld/crimson/clutter/birchclutt5"
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.003,
+      "zoom": 0.02,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        },
+        {
+          "block": "minecraft:nether_sprouts"
+        },
+        {
+          "block": "minecraft:nether_sprouts"
+        },
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    {
+      "chance": 0.02,
+      "zoom": 0.1,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        },
+        {
+          "block": "minecraft:crimson_fungus"
+        },
+        {
+          "block": "minecraft:crimson_roots"
+        },
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.122,
+      "zoom": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        },
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.142,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        },
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30109,
+    "amplitude": 32,
+    "horizontalScale": 144,
+    "verticalScale": 48,
+    "densityStyle": {
+      "style": "NOWHERE"
+    },
+    "crackDepth": 2,
+    "crackWidth": 2.25,
+    "crackScale": 416,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.32,
+    "slopeFade": 0.42,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

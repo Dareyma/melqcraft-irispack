@@ -1,0 +1,81 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Ice Spikes",
+  "color": "#5F7378",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "children": [
+    "frozen/fields/mountain-spruce-frosty"
+  ],
+  "childStyle": {
+    "style": "SIMPLEX_CELLS",
+    "zoom": 0.3
+  },
+  "customDerivitives": [
+    {
+      "id": "underworld_vanilla_ice_spikes_f6daedb4",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#131B20",
+      "fogColor": "#1B4745",
+      "waterColor": "#5D8B92",
+      "waterFogColor": "#27474A",
+      "grassColor": "#677A7D",
+      "foliageColor": "#788A8F",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "max": 30,
+      "min": 20
+    },
+    {
+      "generator": "mountain",
+      "max": 5,
+      "min": 1
+    }
+  ],
+  "wall": "snippet/biome-palette/soul/wall-basalt-soul-sand-nylium",
+  "layers": [
+    "snippet/biome-palette/soul/soul-soil-1-1-slope3-3",
+    "snippet/biome-palette/soul/soul-soil-3-3-slope3",
+    "snippet/biome-palette/soul/soul-soil-basalt-3-3-slope3"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/sbush-paint-c0-025",
+    "snippet/object-placer/soul/stone-boulder-paint-c0-055"
+  ],
+  "decorators": [
+    "snippet/decorator/soul/sprouts-roots-soul-fire-c0-13",
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    "snippet/decorator/soul/soul-fire-c0-006",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp22-perlin-crack416"
+}

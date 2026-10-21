@@ -1,0 +1,195 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Tundra Spruce Denmyre",
+  "color": "#6B7C82",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_tundra_spruce_denmyre_ab3d20d1",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#10181C",
+      "fogColor": "#1B4745",
+      "waterColor": "#578388",
+      "waterFogColor": "#2B4247",
+      "grassColor": "#5C7073",
+      "foliageColor": "#64777A",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "min": 42,
+      "max": 37,
+      "generator": "plain"
+    }
+  ],
+  "wall": "snippet/biome-palette/soul/wall-basalt",
+  "layers": [
+    {
+      "style": {
+        "style": "FLAT"
+      },
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    {
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/basalt-6-18"
+  ],
+  "objects": [
+    {
+      "mode": "PAINT",
+      "chance": 0.0025,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/soul/clutter/bincluster1"
+      ]
+    },
+    {
+      "chance": 0.5,
+      "density": 2,
+      "edit": [
+        "snippet/object-block-replacer/shared/warped-planks-to-stripped-warped-hyphae",
+        "snippet/object-block-replacer/shared/warped-wart-to-warped-wart",
+        "snippet/object-block-replacer/shared/warped-fence-to-warped-fence",
+        "snippet/object-block-replacer/shared/warped-hyphae-to-warped-hyphae"
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/soul/trees/acacia/denmyre1",
+        "underworld/soul/trees/acacia/denmyre2",
+        "underworld/soul/trees/acacia/denmyre3",
+        "underworld/soul/trees/acacia/denmyre4",
+        "underworld/soul/trees/acacia/denmyre5",
+        "underworld/soul/trees/acacia/denmyre6",
+        "underworld/soul/trees/acacia/denmyre7"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "edit": [
+        "snippet/object-block-replacer/shared/warped-wart-to-warped-wart",
+        "snippet/object-block-replacer/shared/warped-wart-to-warped-wart",
+        "snippet/object-block-replacer/shared/warped-hyphae-to-warped-wart"
+      ],
+      "chance": 0.3,
+      "density": 2,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/soul/clutter/oakdenclutt1",
+        "underworld/soul/clutter/oakdenclutt2",
+        "underworld/soul/clutter/oakdenclutt3",
+        "underworld/soul/clutter/oakdenclutt4",
+        "underworld/soul/clutter/oakdenclutt5",
+        "underworld/soul/clutter/oakdenclutt6",
+        "underworld/soul/clutter/oakdenclutt7",
+        "underworld/soul/clutter/oakdenclutt8",
+        "underworld/soul/clutter/oakdenclutt9",
+        "underworld/soul/clutter/oakdenclutt10"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    "snippet/object-placer/soul/pumpkins-paint-c0-008"
+  ],
+  "decorators": [
+    "snippet/decorator/soul/soul-fire-roots-c0-001425-z0-02",
+    "snippet/decorator/soul/soul-fire-c0-0003",
+    {
+      "chance": 0.06,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        },
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ],
+      "style": {
+        "style": "IRIS_DOUBLE"
+      }
+    },
+    {
+      "chance": 0.03,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        },
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/blackstone-buttons-c0-003",
+    {
+      "chance": 0.017,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    "snippet/decorator/soul/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp22-perlin-crack416"
+}

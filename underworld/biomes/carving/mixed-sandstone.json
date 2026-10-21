@@ -1,0 +1,141 @@
+{
+  "name": "Underworld Sandstone Cavern",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "minHeight": 2,
+    "maxHeight": 2,
+    "style": {
+      "style": "FRACTAL_WATER",
+      "zoom": 0.72
+    },
+    "zoom": 0.4,
+    "palette": [
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 4
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 3
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 2
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 3
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 2
+      },
+      {
+        "block": "minecraft:basalt",
+        "weight": 1
+      }
+    ]
+  },
+  "layers": [
+    {
+      "style": {
+        "style": "SIMPLEX",
+        "zoom": 0.92
+      },
+      "zoom": 0.4,
+      "palette": [
+        {
+          "block": "minecraft:soul_sand",
+          "weight": 4
+        },
+        {
+          "block": "minecraft:soul_sand",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:netherrack",
+          "weight": 1
+        }
+      ],
+      "minHeight": 1,
+      "maxHeight": 2
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "style": {
+        "style": "GLOB_IRIS_THICK"
+      },
+      "zoom": 0.4,
+      "palette": [
+        {
+          "weight": 2,
+          "block": "minecraft:smooth_basalt"
+        },
+        {
+          "block": "minecraft:smooth_basalt"
+        },
+        {
+          "weight": 3,
+          "block": "minecraft:smooth_basalt"
+        },
+        {
+          "weight": 2,
+          "block": "minecraft:smooth_basalt"
+        },
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 8
+        }
+      ]
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/soul/desertpost-landstone-carve-c0-21",
+    "snippet/object-placer/soul/desertpost-rock-carve-c0-165",
+    "snippet/object-placer/soul/rock-boulder-carve-c0-0972-x0-75",
+    "snippet/object-placer/soul/desertpost-rock-carve-c0-0972"
+  ],
+  "caveProfile": "snippet/cave-profile/hollows/sandstone-y700",
+  "caveMinDepthBelowSurface": 4,
+  "decorators": [
+    "snippet/decorator/soul/soul-fire-sprouts-c0-018"
+  ],
+  "children": [
+    "carving/mixed-sandstone-child"
+  ],
+  "childStyle": {
+    "style": "CELLULAR_IRIS_DOUBLE",
+    "zoom": 1.06
+  },
+  "childShrinkFactor": 1.54,
+  "color": "#72858A",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_mixed_sandstone_84ec6aac",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#10191C",
+      "fogColor": "#1B4745",
+      "waterColor": "#577B82",
+      "waterFogColor": "#2B4448",
+      "grassColor": "#627377",
+      "foliageColor": "#7F9399",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

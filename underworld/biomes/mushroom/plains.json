@@ -1,0 +1,162 @@
+{
+  "entitySpawners": [
+    "nether/surface/warped-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld Mushroom Plains",
+  "color": "#1E8889",
+  "rarity": 1,
+  "derivative": "minecraft:warped_forest",
+  "vanillaDerivative": "minecraft:warped_forest",
+  "customDerivitives": [
+    {
+      "id": "underworld_mushroom_plains_b788c088",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#092424",
+      "fogColor": "#1A051A",
+      "waterColor": "#2DA199",
+      "waterFogColor": "#08544B",
+      "grassColor": "#279181",
+      "foliageColor": "#268D86",
+      "ambientParticle": {
+        "particle": "minecraft:warped_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "min": 6,
+      "max": 14,
+      "generator": "plain"
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    {
+      "zoom": 0.3,
+      "style": {
+        "style": "NOWHERE"
+      },
+      "palette": [
+        {
+          "weight": 7,
+          "block": "minecraft:warped_nylium"
+        },
+        {
+          "weight": 9,
+          "block": "minecraft:warped_nylium"
+        }
+      ]
+    },
+    "snippet/biome-palette/warped/netherrack-2-4",
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    {
+      "chance": 0.08,
+      "density": 2,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/warped/trees/mushroom/mushclut1",
+        "underworld/warped/trees/mushroom/mushclut2",
+        "underworld/warped/trees/mushroom/mushclut3",
+        "underworld/warped/trees/mushroom/mushclut4",
+        "underworld/warped/trees/mushroom/mushclut5",
+        "underworld/warped/trees/mushroom/mushclut6",
+        "underworld/warped/trees/mushroom/mushclut7",
+        "underworld/warped/trees/mushroom/mushclut8",
+        "underworld/warped/trees/mushroom/mushclut9",
+        "underworld/warped/trees/mushroom/mushclut10"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "chance": 0.08,
+      "density": 2,
+      "edit": [
+        "snippet/object-block-replacer/shared/warped-wart-to-warped-wart"
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/warped/trees/mushroom/mushclut1",
+        "underworld/warped/trees/mushroom/mushclut2",
+        "underworld/warped/trees/mushroom/mushclut3",
+        "underworld/warped/trees/mushroom/mushclut4",
+        "underworld/warped/trees/mushroom/mushclut5",
+        "underworld/warped/trees/mushroom/mushclut6",
+        "underworld/warped/trees/mushroom/mushclut7",
+        "underworld/warped/trees/mushroom/mushclut8",
+        "underworld/warped/trees/mushroom/mushclut9",
+        "underworld/warped/trees/mushroom/mushclut10"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    "snippet/object-placer/warped/smolshroom-c0-025",
+    "snippet/object-placer/warped/smolshroom-c0-1"
+  ],
+  "decorators": [
+    "snippet/decorator/warped/blackstone-buttons-c0-005",
+    {
+      "chance": 0.007,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:warped_fungus"
+        },
+        {
+          "block": "minecraft:warped_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "slab": {
+    "palette": [
+      {
+        "weight": 2,
+        "block": "minecraft:air"
+      },
+      {
+        "data": {
+          "waterlogged": false,
+          "type": "bottom"
+        },
+        "weight": 2,
+        "block": "minecraft:blackstone_slab"
+      },
+      {
+        "weight": 3,
+        "block": "minecraft:air"
+      }
+    ]
+  },
+  "terrain3D": "snippet/terrain-3d/rolling/amp10-perlin-crack392"
+}

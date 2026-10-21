@@ -1,0 +1,190 @@
+{
+  "entitySpawners": [
+    "nether/lava",
+    "nether/cave"
+  ],
+  "name": "Underworld Tundra Lake",
+  "color": "#665E5A",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "customDerivitives": [
+    {
+      "id": "underworld_tundra_sea_lake_70d52fcc",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#161312",
+      "fogColor": "#685F70",
+      "waterColor": "#AB5419",
+      "waterFogColor": "#5A1C10",
+      "grassColor": "#5E534F",
+      "foliageColor": "#615956",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "min": -32,
+      "max": -10,
+      "generator": "mountain"
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/blackstone-basalt",
+  "layers": [
+    {
+      "style": {
+        "style": "FLAT"
+      },
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    },
+    {
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    "snippet/biome-palette/stone/blackstone-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/basalt/bincluster-paint-c0-0025",
+    {
+      "chance": 0.5,
+      "density": 2,
+      "edit": [
+        "snippet/object-block-replacer/shared/crimson-planks-to-stripped-crimson-hyphae",
+        "snippet/object-block-replacer/shared/nether-wart-to-nether-wart",
+        "snippet/object-block-replacer/shared/crimson-fence-to-crimson-fence",
+        "snippet/object-block-replacer/shared/crimson-hyphae-to-crimson-hyphae"
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/basalt/trees/acacia/denmyre1",
+        "underworld/basalt/trees/acacia/denmyre2",
+        "underworld/basalt/trees/acacia/denmyre3",
+        "underworld/basalt/trees/acacia/denmyre4",
+        "underworld/basalt/trees/acacia/denmyre5",
+        "underworld/basalt/trees/acacia/denmyre6",
+        "underworld/basalt/trees/acacia/denmyre7"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "edit": [
+        "snippet/object-block-replacer/shared/nether-wart-to-nether-wart",
+        "snippet/object-block-replacer/shared/nether-wart-to-nether-wart",
+        {
+          "find": [
+            {
+              "block": "minecraft:crimson_hyphae"
+            }
+          ],
+          "replace": {
+            "palette": [
+              {
+                "block": "minecraft:nether_wart_block"
+              }
+            ]
+          }
+        }
+      ],
+      "chance": 0.3,
+      "density": 2,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/basalt/clutter/oakdenclutt1",
+        "underworld/basalt/clutter/oakdenclutt2",
+        "underworld/basalt/clutter/oakdenclutt3",
+        "underworld/basalt/clutter/oakdenclutt4",
+        "underworld/basalt/clutter/oakdenclutt5",
+        "underworld/basalt/clutter/oakdenclutt6",
+        "underworld/basalt/clutter/oakdenclutt7",
+        "underworld/basalt/clutter/oakdenclutt8",
+        "underworld/basalt/clutter/oakdenclutt9",
+        "underworld/basalt/clutter/oakdenclutt10"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/soul/fire-sprouts-c0-001425-z0-02",
+    "snippet/decorator/shared/fire-ages-c0-0003",
+    {
+      "chance": 0.06,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        },
+        {
+          "block": "minecraft:fire"
+        }
+      ],
+      "style": {
+        "style": "IRIS_DOUBLE"
+      }
+    },
+    {
+      "chance": 0.03,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        },
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/blackstone-buttons-c0-003",
+    {
+      "chance": 0.017,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ]
+}

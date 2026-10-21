@@ -1,0 +1,98 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Tundra Magic Forest",
+  "color": "#6B8184",
+  "rarity": 7,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_tundra_magic_forest_extended_49cbd43b",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#0F181B",
+      "fogColor": "#1B4745",
+      "waterColor": "#54888D",
+      "waterFogColor": "#273C42",
+      "grassColor": "#6C7C82",
+      "foliageColor": "#708589",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "min": 97,
+      "max": 132
+    },
+    {
+      "generator": "mountain",
+      "max": 42,
+      "min": 34
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/soul/wall-basalt",
+  "layers": [
+    "snippet/biome-palette/soul/basalt-soul-sand-3-5-steep6-9",
+    "snippet/biome-palette/soul/soul-soil-soul-sand-3-5-steep5-3",
+    {
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/gravelsplotch-paint-c0-35",
+    "snippet/object-placer/soul/dotree-c0-8",
+    "snippet/object-placer/soul/obelisk-c0-01"
+  ],
+  "decorators": [
+    "snippet/decorator/soul/soul-fire-roots-c0-0077",
+    "snippet/decorator/soul/soul-fire-c0-0003",
+    {
+      "chance": 0.06,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "childShrinkFactor": 8,
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30107,
+    "amplitude": 26,
+    "horizontalScale": 144,
+    "verticalScale": 48,
+    "densityStyle": {
+      "style": "IRIS_HALF"
+    },
+    "crackDepth": 0,
+    "crackWidth": 2.25,
+    "crackScale": 448,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.28,
+    "slopeFade": 0.4,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

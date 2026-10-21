@@ -1,0 +1,83 @@
+{
+  "proceduralObjects": "snippet/procedural-objects/frozen/magical-soul-cave",
+  "name": "Underworld Glacial",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:basalt"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "maxHeight": 1,
+      "minHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.01,
+      "stackMax": 60,
+      "stackMin": 30,
+      "absoluteMaxStack": 6,
+      "scaleStack": true,
+      "partOf": "CEILING",
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "maxHeight": 3,
+      "minHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/soul/rock-boulder-carve-c0-0972-x0-375"
+  ],
+  "caveProfile": "snippet/cave-profile/caverns/ice-fbm-y620",
+  "caveMinDepthBelowSurface": 10,
+  "children": [
+    "carving/glacial-child"
+  ],
+  "childStyle": {
+    "style": "SIMPLEX",
+    "zoom": 0.62
+  },
+  "childShrinkFactor": 1.3,
+  "color": "#748890",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_glacial_f1776818",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#111A1F",
+      "fogColor": "#1B4745",
+      "waterColor": "#609598",
+      "waterFogColor": "#22393D",
+      "grassColor": "#6A8183",
+      "foliageColor": "#66767A",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

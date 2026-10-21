@@ -1,0 +1,74 @@
+{
+  "entitySpawners": [
+    "nether/lava",
+    "nether/cave"
+  ],
+  "name": "Underworld Rich oceans",
+  "color": "#5E5552",
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "max": -40,
+      "min": -60
+    }
+  ],
+  "layers": [
+    "snippet/biome-palette/basalt/blackstone-gravel-2-2-slope3",
+    {
+      "minHeight": 2,
+      "maxHeight": 10,
+      "palette": [
+        {
+          "block": "minecraft:gravel"
+        }
+      ]
+    }
+  ],
+  "objects": [],
+  "decorators": [
+    {
+      "chance": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:lava"
+        }
+      ]
+    },
+    {
+      "chance": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:lava"
+        }
+      ],
+      "topPalette": [
+        {
+          "block": "minecraft:lava"
+        }
+      ],
+      "partOf": "SEA_FLOOR"
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_ocean_rich_oceans_e95547ba",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#181414",
+      "fogColor": "#685F70",
+      "waterColor": "#BD5F27",
+      "waterFogColor": "#4D190F",
+      "grassColor": "#635652",
+      "foliageColor": "#675E5B",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

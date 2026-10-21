@@ -1,0 +1,125 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Tropical Beach",
+  "color": "#544D4A",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "generators": [
+    {
+      "min": -3,
+      "max": 3,
+      "generator": "plain"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:smooth_basalt"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "minHeight": 3,
+      "maxHeight": 6,
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "chance": 0.34,
+      "density": 2,
+      "edit": [
+        "snippet/object-block-replacer/basalt/wither-skull-to-air"
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/basalt/trees/jungle/palm1",
+        "underworld/basalt/trees/jungle/palm2",
+        "underworld/basalt/trees/jungle/palm3",
+        "underworld/basalt/trees/jungle/palm12",
+        "underworld/basalt/trees/jungle/palm11",
+        "underworld/basalt/trees/jungle/palm10",
+        "underworld/basalt/trees/jungle/palm9"
+      ]
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/shared/crimson-buttons-air-c0-01",
+    {
+      "partOf": "SHORE_LINE",
+      "chance": 0.21,
+      "variance": {
+        "style": "SIMPLEX"
+      },
+      "stackMax": 6,
+      "zoom": 5,
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ],
+      "heightVariance": {
+        "style": "NOWHERE"
+      },
+      "stackMin": 1
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "effects": [
+    {
+      "particleAltX": 0.301,
+      "particleAltY": -0.33885,
+      "particleAltZ": 0.301,
+      "chance": 1,
+      "particleEffect": "ASH",
+      "particleOffset": 12,
+      "interval": 550,
+      "particleCount": 0
+    }
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_tropical_beach_6b1c659f",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#191515",
+      "fogColor": "#685F70",
+      "waterColor": "#B34527",
+      "waterFogColor": "#582B1B",
+      "grassColor": "#574B48",
+      "foliageColor": "#655C59",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "name": "Underworld Deepened Ravine",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "style": {
+      "style": "NOWHERE"
+    },
+    "palette": [
+      {
+        "block": "minecraft:basalt",
+        "weight": 3
+      },
+      {
+        "block": "minecraft:basalt"
+      }
+    ]
+  },
+  "layers": [
+    "snippet/biome-palette/soul/basalt-2-2"
+  ],
+  "decorators": [
+    {
+      "partOf": "CEILING",
+      "chance": 0.03,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    {
+      "partOf": "CEILING",
+      "chance": 0.05,
+      "scaleStack": true,
+      "stackMin": 20,
+      "stackMax": 70,
+      "absoluteMaxStack": 10,
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "maxHeight": 1,
+      "minHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:basalt",
+          "weight": 20
+        }
+      ]
+    }
+  ],
+  "childStyle": {
+    "style": "SIMPLEX",
+    "zoom": 0.86
+  },
+  "objects": [
+    "snippet/object-placer/soul/stoneclutt-carve-c0-21-d4",
+    "snippet/object-placer/soul/rock-rubble-carve-c0-165",
+    "snippet/object-placer/soul/rock-rubble-carve-c0-0972"
+  ],
+  "caveProfile": "snippet/cave-profile/ravines/drip-deep-y700",
+  "caveMinDepthBelowSurface": 10,
+  "children": [
+    "carving/deepravine-child"
+  ],
+  "childShrinkFactor": 1.3,
+  "color": "#748F92",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_deepravine_cd74f011",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#141C20",
+      "fogColor": "#1B4745",
+      "waterColor": "#64949A",
+      "waterFogColor": "#253C41",
+      "grassColor": "#5D6B70",
+      "foliageColor": "#667A7D",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

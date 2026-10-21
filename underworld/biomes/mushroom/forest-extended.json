@@ -1,0 +1,261 @@
+{
+  "entitySpawners": [
+    "nether/surface/warped-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld Mushroom Forest Hills",
+  "color": "#31A894",
+  "rarity": 1,
+  "derivative": "minecraft:warped_forest",
+  "vanillaDerivative": "minecraft:warped_forest",
+  "customDerivitives": [
+    {
+      "id": "underworld_mushroom_forest_extended_ac59d800",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#052425",
+      "fogColor": "#1A051A",
+      "waterColor": "#279B96",
+      "waterFogColor": "#044F51",
+      "grassColor": "#268A83",
+      "foliageColor": "#249089",
+      "ambientParticle": {
+        "particle": "minecraft:warped_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "min": 62,
+      "max": 90,
+      "generator": "plain"
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    {
+      "minHeight": 3,
+      "maxHeight": 5,
+      "slopeCondition": {
+        "minimumSlope": 6.9
+      },
+      "palette": [
+        {
+          "block": "minecraft:gravel"
+        },
+        {
+          "block": "minecraft:warped_wart_block"
+        }
+      ]
+    },
+    {
+      "minHeight": 3,
+      "maxHeight": 5,
+      "slopeCondition": {
+        "minimumSlope": 4.6
+      },
+      "palette": [
+        {
+          "block": "minecraft:gravel"
+        },
+        {
+          "block": "minecraft:warped_wart_block"
+        }
+      ]
+    },
+    {
+      "zoom": 0.5,
+      "style": {
+        "style": "NOWHERE"
+      },
+      "palette": [
+        {
+          "weight": 4,
+          "block": "minecraft:warped_nylium"
+        },
+        {
+          "block": "minecraft:gravel"
+        },
+        {
+          "weight": 3,
+          "block": "minecraft:warped_nylium"
+        }
+      ]
+    },
+    "snippet/biome-palette/warped/netherrack-2-4",
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    {
+      "chance": 0.18,
+      "density": 2,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/warped/trees/mushroom/mushclut1",
+        "underworld/warped/trees/mushroom/mushclut2",
+        "underworld/warped/trees/mushroom/mushclut3",
+        "underworld/warped/trees/mushroom/mushclut4",
+        "underworld/warped/trees/mushroom/mushclut5",
+        "underworld/warped/trees/mushroom/mushclut6",
+        "underworld/warped/trees/mushroom/mushclut7",
+        "underworld/warped/trees/mushroom/mushclut8",
+        "underworld/warped/trees/mushroom/mushclut9",
+        "underworld/warped/trees/mushroom/mushclut10"
+      ],
+      "mode": "PAINT",
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "chance": 0.18,
+      "density": 2,
+      "edit": [
+        "snippet/object-block-replacer/shared/warped-wart-to-warped-wart"
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/warped/trees/mushroom/mushclut1",
+        "underworld/warped/trees/mushroom/mushclut2",
+        "underworld/warped/trees/mushroom/mushclut3",
+        "underworld/warped/trees/mushroom/mushclut4",
+        "underworld/warped/trees/mushroom/mushclut5",
+        "underworld/warped/trees/mushroom/mushclut6",
+        "underworld/warped/trees/mushroom/mushclut7",
+        "underworld/warped/trees/mushroom/mushclut8",
+        "underworld/warped/trees/mushroom/mushclut9",
+        "underworld/warped/trees/mushroom/mushclut10"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "chance": 0.8,
+      "density": 2,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/warped/trees/mushroom/browngeneric1",
+        "underworld/warped/trees/mushroom/browngeneric2",
+        "underworld/warped/trees/mushroom/redgeneric3",
+        "underworld/warped/trees/mushroom/redgeneric4",
+        "underworld/warped/trees/mushroom/redgeneric5",
+        "underworld/warped/trees/mushroom/redgeneric6",
+        "underworld/warped/trees/mushroom/redgeneric7",
+        "underworld/warped/trees/mushroom/redgeneric8",
+        "underworld/warped/trees/mushroom/redgeneric9",
+        "underworld/warped/trees/mushroom/redgeneric10",
+        "underworld/warped/trees/mushroom/redgeneric11"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    "snippet/object-placer/warped/redlumotall-c0-05",
+    {
+      "chance": 0.5,
+      "density": 2,
+      "edit": [
+        "snippet/object-block-replacer/shared/warped-wart-to-warped-wart"
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/warped/trees/mushroom/browngeneric1",
+        "underworld/warped/trees/mushroom/browngeneric2",
+        "underworld/warped/trees/mushroom/redgeneric3",
+        "underworld/warped/trees/mushroom/redgeneric4",
+        "underworld/warped/trees/mushroom/redgeneric5",
+        "underworld/warped/trees/mushroom/redgeneric6",
+        "underworld/warped/trees/mushroom/redgeneric7",
+        "underworld/warped/trees/mushroom/redgeneric8",
+        "underworld/warped/trees/mushroom/redgeneric9",
+        "underworld/warped/trees/mushroom/redgeneric10",
+        "underworld/warped/trees/mushroom/redgeneric11"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    "snippet/object-placer/warped/smolshroom-c0-025",
+    "snippet/object-placer/warped/smolshroom-c0-1"
+  ],
+  "decorators": [
+    "snippet/decorator/shared/blackstone-buttons-c0-009",
+    {
+      "chance": 0.05,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:warped_fungus"
+        },
+        {
+          "block": "minecraft:warped_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "slab": {
+    "palette": [
+      {
+        "weight": 8,
+        "block": "minecraft:air"
+      },
+      {
+        "data": {
+          "waterlogged": false,
+          "type": "bottom"
+        },
+        "block": "minecraft:blackstone_slab"
+      },
+      {
+        "weight": 10,
+        "block": "minecraft:air"
+      }
+    ]
+  },
+  "terrain3D": "snippet/terrain-3d/hills/amp22-nowhere-crack448"
+}

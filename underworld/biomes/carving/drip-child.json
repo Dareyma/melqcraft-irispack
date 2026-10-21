@@ -1,0 +1,135 @@
+{
+  "name": "Underworld Dripstone Cavern Child",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:basalt",
+        "weight": 5
+      },
+      {
+        "block": "minecraft:basalt",
+        "weight": 2
+      }
+    ]
+  },
+  "layers": [
+    {
+      "minHeight": 1,
+      "maxHeight": 2,
+      "style": {
+        "style": "GLOB_IRIS_THICK"
+      },
+      "zoom": 0.4,
+      "palette": [
+        {
+          "weight": 2,
+          "block": "minecraft:basalt"
+        },
+        {
+          "weight": 2,
+          "block": "minecraft:magma_block"
+        },
+        {
+          "block": "minecraft:basalt",
+          "weight": 8
+        },
+        {
+          "block": "minecraft:basalt",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.0759,
+      "scaleStack": true,
+      "stackMin": 25,
+      "stackMax": 80,
+      "absoluteMaxStack": 6,
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    },
+    {
+      "partOf": "CEILING",
+      "chance": 0.12,
+      "absoluteMaxStack": 6,
+      "scaleStack": true,
+      "stackMin": 25,
+      "stackMax": 80,
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "maxHeight": 2,
+      "minHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:basalt",
+          "weight": 26
+        }
+      ]
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/soul/stoneclutt-carve-c0-21-d6",
+    "snippet/object-placer/soul/rock-rubble-carve-c0-2145",
+    {
+      "chance": 0.13122,
+      "density": 6,
+      "carvingSupport": "CARVING_ONLY",
+      "caveAnchorMode": "PROFILE_DEFAULT",
+      "translate": {
+        "y": -1
+      },
+      "place": [
+        "underworld/soul/clutter/stoneclutt5",
+        "underworld/soul/clutter/stoneclutt6",
+        "underworld/soul/clutter/stoneclutt7",
+        "underworld/soul/clutter/rock2",
+        "underworld/soul/clutter/rock3",
+        "underworld/soul/clutter/rock4",
+        "underworld/soul/clutter/boulder13",
+        "underworld/soul/clutter/boulder14",
+        "underworld/soul/clutter/boulder15"
+      ],
+      "bottom": true,
+      "force": true,
+      "scale": {
+        "size": 0.75
+      }
+    }
+  ],
+  "caveProfile": "snippet/cave-profile/ravines/drip-high-warp-y700",
+  "caveMinDepthBelowSurface": 10,
+  "color": "#6F8287",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_drip_child_9eea97a7",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#131A1F",
+      "fogColor": "#1B4745",
+      "waterColor": "#5D838E",
+      "waterFogColor": "#264148",
+      "grassColor": "#6E8689",
+      "foliageColor": "#687B7D",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

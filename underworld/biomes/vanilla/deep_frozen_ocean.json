@@ -1,0 +1,115 @@
+{
+  "proceduralObjects": "snippet/procedural-objects/frozen/magical-blackstone-spikes-surface",
+  "entitySpawners": [
+    "nether/lava",
+    "nether/cave"
+  ],
+  "name": "Underworld Deep Frozen Ocean",
+  "color": "#695E5B",
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "generators": [
+    {
+      "min": -32,
+      "max": -10,
+      "generator": "mountain"
+    }
+  ],
+  "layers": [
+    {
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:gravel"
+        },
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "weight": 5,
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:gravel"
+        },
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    }
+  ],
+  "objects": [],
+  "seaLayers": [
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "style": {
+        "style": "CELLULAR_HEIGHT_IRIS"
+      },
+      "zoom": 0.5,
+      "palette": [
+        {
+          "weight": 1,
+          "block": "minecraft:blackstone"
+        },
+        {
+          "weight": 2,
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "weight": 2,
+          "block": "minecraft:blackstone"
+        },
+        {
+          "weight": 1,
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    }
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_vanilla_deep_frozen_ocean_88a2db43",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#141111",
+      "fogColor": "#685F70",
+      "waterColor": "#C55126",
+      "waterFogColor": "#5B2B18",
+      "grassColor": "#61544F",
+      "foliageColor": "#605854",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/shared/surface-quartz"
+  ]
+}

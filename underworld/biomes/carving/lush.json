@@ -1,0 +1,213 @@
+{
+  "name": "Underworld Lush Cavern",
+  "derivative": "minecraft:warped_forest",
+  "vanillaDerivative": "minecraft:warped_forest",
+  "wall": {
+    "style": {
+      "style": "NOWHERE",
+      "zoom": 0.5
+    },
+    "palette": [
+      {
+        "block": "minecraft:netherrack"
+      },
+      {
+        "block": "minecraft:blackstone"
+      },
+      {
+        "block": "minecraft:warped_wart_block"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "style": {
+        "style": "CELLULAR"
+      },
+      "maxHeight": 1,
+      "minHeight": 1,
+      "zoom": 0.5,
+      "palette": [
+        {
+          "block": "minecraft:warped_wart_block",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:netherrack"
+        },
+        {
+          "block": "minecraft:netherrack"
+        },
+        {
+          "block": "minecraft:netherrack"
+        },
+        {
+          "block": "minecraft:warped_nylium"
+        }
+      ]
+    },
+    {
+      "style": {
+        "style": "CELLULAR"
+      },
+      "maxHeight": 2,
+      "minHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:netherrack",
+          "weight": 5
+        },
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.01,
+      "absoluteMaxStack": 1,
+      "palette": [
+        {
+          "block": "minecraft:warped_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.03,
+      "absoluteMaxStack": 1,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        },
+        {
+          "block": "minecraft:warped_wart_block"
+        },
+        {
+          "block": "minecraft:warped_roots"
+        },
+        {
+          "block": "minecraft:warped_fungus"
+        },
+        {
+          "block": "minecraft:warped_wart_block"
+        }
+      ]
+    },
+    {
+      "partOf": "CEILING",
+      "chance": 0.05,
+      "absoluteMaxStack": 30,
+      "scaleStack": true,
+      "stackMin": 4,
+      "stackMax": 25,
+      "topPalette": [
+        {
+          "block": "minecraft:twisting_vines"
+        },
+        {
+          "block": "minecraft:warped_roots"
+        },
+        {
+          "block": "minecraft:twisting_vines"
+        }
+      ],
+      "palette": [
+        {
+          "block": "minecraft:twisting_vines"
+        },
+        {
+          "block": "minecraft:twisting_vines"
+        }
+      ]
+    },
+    {
+      "partOf": "CEILING",
+      "chance": 0.03,
+      "stackMin": 1,
+      "stackMax": 1,
+      "palette": [
+        {
+          "block": "minecraft:glowstone"
+        }
+      ]
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "style": {
+        "style": "NOWHERE"
+      },
+      "maxHeight": 2,
+      "minHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:warped_wart_block",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/warped/jungleclutt-carve-c0-21-d4",
+    {
+      "chance": 0.33792,
+      "density": 2,
+      "carvingSupport": "CARVING_ONLY",
+      "caveAnchorMode": "PROFILE_DEFAULT",
+      "translate": {
+        "y": -1
+      },
+      "place": [
+        "underworld/warped/trees/jungle/mgeneric1",
+        "underworld/warped/trees/jungle/mgeneric2",
+        "underworld/warped/trees/jungle/mgeneric3",
+        "underworld/warped/trees/jungle/mgeneric4",
+        "underworld/warped/trees/jungle/deligeneric2",
+        "underworld/warped/trees/jungle/deligeneric3",
+        "underworld/warped/trees/jungle/deligeneric4"
+      ],
+      "bottom": true,
+      "force": true,
+      "scale": {
+        "size": 0.75
+      }
+    },
+    "snippet/object-placer/warped/rock-boulder-carve-c0-0972",
+    "snippet/object-placer/warped/jungle-rubble-carve-c0-0972"
+  ],
+  "caveProfile": "snippet/cave-profile/caverns/lush-open-y700",
+  "caveMinDepthBelowSurface": 8,
+  "children": [
+    "carving/moss-pillars",
+    "carving/lush-child"
+  ],
+  "childShrinkFactor": 1.42,
+  "childStyle": {
+    "style": "PERLIN_IRIS",
+    "zoom": 1.1
+  },
+  "color": "#248D7B",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_lush_15cd2878",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#061F24",
+      "fogColor": "#1A051A",
+      "waterColor": "#30A697",
+      "waterFogColor": "#0C575C",
+      "grassColor": "#308C8B",
+      "foliageColor": "#2C857B",
+      "ambientParticle": {
+        "particle": "minecraft:warped_spore",
+        "rarity": 45
+      }
+    }
+  ]
+}

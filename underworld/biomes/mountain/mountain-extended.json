@@ -1,0 +1,118 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Mountain Middle",
+  "color": "#59504D",
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "children": [
+    "mountain/cliffs"
+  ],
+  "generators": [
+    {
+      "generator": "mountain",
+      "max": 195,
+      "min": 106
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/basalt/wall-blackstone-basalt-gravel-nylium",
+  "layers": [
+    "snippet/biome-palette/basalt/basalt-1-1-slope2-6",
+    "snippet/biome-palette/basalt/gravel-nylium-2-4-steep3-95",
+    {
+      "minHeight": 2,
+      "maxHeight": 4,
+      "slopeCondition": {
+        "minimumSlope": 3.95
+      },
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    "snippet/biome-palette/basalt/basalt-1-1-slope4",
+    "snippet/biome-palette/basalt/blackstone-3-3-slope3"
+  ],
+  "decorators": [
+    "snippet/decorator/basalt/fungus-sprouts-fire-c0-13-trioctave-z0-3",
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "childStyle": {
+    "style": "STATIC",
+    "exponent": 0.625,
+    "zoom": 1,
+    "fracture": {
+      "style": "SIMPLEX",
+      "multiplier": 4,
+      "zoom": 0.9
+    }
+  },
+  "slab": "snippet/biome-palette/slab/brick-blackstone-slab-half",
+  "customDerivitives": [
+    {
+      "id": "underworld_mountain_mountain_extended_7533c07a",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#181414",
+      "fogColor": "#685F70",
+      "waterColor": "#AC541F",
+      "waterFogColor": "#4F2313",
+      "grassColor": "#584D4A",
+      "foliageColor": "#625A56",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30109,
+    "amplitude": 44,
+    "horizontalScale": 176,
+    "verticalScale": 56,
+    "densityStyle": {
+      "style": "IRIS_HALF"
+    },
+    "crackDepth": 5,
+    "crackWidth": 2.25,
+    "crackScale": 416,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.22,
+    "slopeFade": 0.36,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Frozen Spruce Hills",
+  "color": "#6D7F85",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_frozen_spruce_hills_extended_ed7e524d",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#131C1E",
+      "fogColor": "#1B4745",
+      "waterColor": "#618992",
+      "waterFogColor": "#263D40",
+      "grassColor": "#5B6D70",
+      "foliageColor": "#6D8687",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "max": 112,
+      "min": 50
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:basalt"
+      },
+      {
+        "block": "minecraft:basalt"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "minHeight": 0,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    {
+      "minHeight": 6,
+      "maxHeight": 28,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/evergreen-c0-8"
+  ],
+  "decorators": [
+    "snippet/decorator/soul/soul-soil-air-c1",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp24-simplex-crack448"
+}

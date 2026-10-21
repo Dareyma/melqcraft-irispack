@@ -1,0 +1,97 @@
+{
+  "entitySpawners": [
+    "nether/surface/nether-wastes",
+    "nether/cave"
+  ],
+  "name": "Underworld Temperate Birch Denmyre",
+  "color": "#882E23",
+  "rarity": 1,
+  "derivative": "minecraft:nether_wastes",
+  "vanillaDerivative": "minecraft:nether_wastes",
+  "generators": [
+    {
+      "min": 4,
+      "max": 7,
+      "generator": "plain"
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    {
+      "style": {
+        "style": "FLAT"
+      },
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/wastes/bincluster-paint-c0-0025",
+    "snippet/object-placer/wastes/camp-1-paint-c0-00375",
+    "snippet/object-placer/wastes/acacia-denmyre-c0-5",
+    "snippet/object-placer/wastes/oakdenclutt-c0-3"
+  ],
+  "decorators": [
+    "snippet/decorator/wastes/fungus-fire-c0-0044",
+    {
+      "chance": 0.105,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/blackstone-buttons-c0-003",
+    {
+      "chance": 0.027,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/wastes/wildflowers",
+    "snippet/decorator/shared/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_temperate_birch_denmyre_1b268652",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#2A0908",
+      "fogColor": "#330808",
+      "waterColor": "#DE4B0A",
+      "waterFogColor": "#65160A",
+      "grassColor": "#793623",
+      "foliageColor": "#864727",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": "snippet/terrain-3d/rolling/amp10-perlin-crack392"
+}

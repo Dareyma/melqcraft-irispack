@@ -1,0 +1,77 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Savanna Beach",
+  "color": "#574F4B",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "generators": [
+    {
+      "min": 0,
+      "max": 0,
+      "generator": "plain"
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/wall/blackstone-basalt",
+  "layers": [
+    {
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    },
+    {
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/blackstone-1-3",
+    "snippet/biome-palette/stone/blackstone-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/basalt/obelisk-c0-001",
+    "snippet/object-placer/basalt/literalgarbage-c0-001"
+  ],
+  "decorators": [
+    {
+      "chance": 0.105,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/dry-grass",
+    "snippet/decorator/shared/basalt-shoreline-c0-18",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_savanna_shore_beach_e0833616",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#181313",
+      "fogColor": "#685F70",
+      "waterColor": "#C34613",
+      "waterFogColor": "#4C1712",
+      "grassColor": "#554947",
+      "foliageColor": "#605754",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

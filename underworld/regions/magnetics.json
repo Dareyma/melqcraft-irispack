@@ -1,0 +1,126 @@
+{
+  "name": "The Magnetics",
+  "color": "#5E5552",
+  "rarity": 15,
+  "riverPolicy": {
+    "placement": "NATURAL",
+    "routing": "AVOID",
+    "outletAdmission": true,
+    "profiles": [
+      "lava"
+    ],
+    "surfaceBiomes": [
+      "prismatics/sea"
+    ],
+    "mouthBiomes": [
+      "prismatics/sea"
+    ],
+    "shoreBiomes": [
+      "temperate/shore/beach",
+      "ocean/shore/beach"
+    ],
+    "bankBiomes": [
+      "magnetics/glass",
+      "magnetics/noise"
+    ],
+    "floodedCaveBiomes": [
+      "carving/magnetic-hollows",
+      "carving/polarity-grotto"
+    ],
+    "widthMultiplier": 0.62,
+    "depthMultiplier": 1.55,
+    "routingMultiplier": 1.55,
+    "surfacePools": [
+      "lava_pool"
+    ]
+  },
+  "landBiomes": [
+    "magnetics/plains",
+    "magnetics/frozen",
+    "magnetics/dunes",
+    "magnetics/mycelium",
+    "magnetics/glass",
+    "magnetics/noise"
+  ],
+  "caveBiomes": [
+    "carving/magnetic-hollows",
+    "carving/flux-crystal-caverns",
+    "carving/polarity-grotto"
+  ],
+  "shoreBiomes": [
+    "temperate/shore/beach",
+    "ocean/shore/beach"
+  ],
+  "seaBiomeZoom": 6,
+  "seaBiomes": [
+    "ocean/deep",
+    "ocean/dark-depth-ocean",
+    "temperate/sea/ocean",
+    "temperate/sea/ocean-deep"
+  ],
+  "landBiomeZoom": 3.5,
+  "shoreBiomeZoom": 0.15,
+  "shoreHeightMin": 1,
+  "shoreHeightMax": 5.2,
+  "shoreHeightZoom": 1.14,
+  "loot": {
+    "mode": "FALLBACK",
+    "multiplier": 0.5,
+    "tables": [
+      "temperate/clutter",
+      "cave/clutter"
+    ]
+  },
+  "caveProfile": {
+    "enabled": true,
+    "verticalRange": {
+      "min": 6,
+      "max": 100
+    },
+    "baseDensityStyle": {
+      "style": "CELLULAR",
+      "zoom": 0.78
+    },
+    "detailDensityStyle": {
+      "style": "SIMPLEX",
+      "zoom": 0.32
+    },
+    "warpStyle": {
+      "style": "SIMPLEX",
+      "zoom": 0.26
+    },
+    "baseWeight": 1.0,
+    "detailWeight": 0.16,
+    "warpStrength": 0.32,
+    "densityThreshold": {
+      "min": -0.08,
+      "max": 0.02,
+      "style": {
+        "style": "SIMPLEX",
+        "zoom": 0.42
+      }
+    },
+    "thresholdBias": 0.06,
+    "sampleStep": 2,
+    "surfaceClearance": 12,
+    "allowSurfaceBreak": false,
+    "surfaceBreakStyle": {
+      "style": "SIMPLEX",
+      "zoom": 0.88
+    },
+    "surfaceBreakNoiseThreshold": 0.99,
+    "surfaceBreakDepth": 4,
+    "surfaceBreakThresholdBoost": 0.02,
+    "objectMinDepthBelowSurface": 14,
+    "defaultObjectAnchor": "FLOOR",
+    "defaultObjectPlaceMode": "ORGANIC_STILT",
+    "anchorScanStep": 1,
+    "anchorSearchAttempts": 12,
+    "allowFluid": true,
+    "fluidMinDepthBelowSurface": 20,
+    "fluidRequiresFloor": true,
+    "allowLava": true,
+    "modules": []
+  },
+  "caveBiomeZoom": 3.3
+}

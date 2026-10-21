@@ -1,0 +1,205 @@
+{
+  "proceduralObjects": "snippet/procedural-objects/frozen/magical-soul-surface",
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Frozen Plains",
+  "color": "#5D6E74",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_frozen_plains_268470e8",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#131D20",
+      "fogColor": "#1B4745",
+      "waterColor": "#547E89",
+      "waterFogColor": "#233941",
+      "grassColor": "#596A6D",
+      "foliageColor": "#768B90",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "min": 6,
+      "max": 14,
+      "generator": "plain"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:basalt"
+      },
+      {
+        "block": "minecraft:basalt"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "minHeight": 0,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    {
+      "minHeight": 4,
+      "maxHeight": 7,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/basalt-6-18"
+  ],
+  "objects": [
+    {
+      "chance": 0.000256,
+      "density": 1,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/soul/clutter/grave1"
+      ]
+    },
+    {
+      "chance": 0.005,
+      "density": 1,
+      "edit": [
+        {
+          "find": [
+            {
+              "block": "minecraft:twisting_vines"
+            }
+          ],
+          "replace": {
+            "palette": [
+              {
+                "block": "minecraft:air"
+              }
+            ]
+          }
+        }
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/soul/clutter/obelisk1",
+        "underworld/soul/clutter/obelisk2",
+        "underworld/soul/clutter/obelisk3",
+        "underworld/soul/clutter/obelisk4",
+        "underworld/soul/clutter/obelisk5",
+        "underworld/soul/clutter/obelisk6",
+        "underworld/soul/clutter/obelisk7"
+      ]
+    },
+    {
+      "density": 1,
+      "edit": [
+        "snippet/object-block-replacer/soul/warped-wart-to-warped-wart-perlin"
+      ],
+      "place": [
+        "underworld/soul/trees/spruce/pine1",
+        "underworld/soul/trees/spruce/pine2",
+        "underworld/soul/trees/spruce/pine3",
+        "underworld/soul/trees/spruce/pine4",
+        "underworld/soul/trees/spruce/pine5",
+        "underworld/soul/trees/spruce/pine6",
+        "underworld/soul/trees/spruce/pine7",
+        "underworld/soul/trees/spruce/pine8",
+        "underworld/soul/trees/spruce/pine9"
+      ],
+      "slopeCondition": {
+        "maximumSlope": 2
+      },
+      "chance": 0.6,
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": 0,
+          "max": 270
+        }
+      },
+      "warp": {
+        "style": "IRIS_DOUBLE",
+        "exponent": 1.2,
+        "zoom": 0.4
+      }
+    },
+    {
+      "density": 1,
+      "mode": "PAINT",
+      "chance": 0.00975,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/soul/clutter/camp1"
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 1,
+      "variance": {
+        "style": "NOWHERE",
+        "zoom": 0.5
+      },
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        },
+        {
+          "block": "minecraft:air"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/rolling/amp10-perlin-crack392"
+}

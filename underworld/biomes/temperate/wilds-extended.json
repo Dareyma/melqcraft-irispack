@@ -1,0 +1,158 @@
+{
+  "entitySpawners": [
+    "nether/surface/nether-wastes",
+    "nether/cave"
+  ],
+  "name": "Underworld Temperate Wilds",
+  "color": "#9E3F1A",
+  "rarity": 1,
+  "derivative": "minecraft:nether_wastes",
+  "vanillaDerivative": "minecraft:nether_wastes",
+  "customDerivitives": [
+    {
+      "id": "underworld_temperate_wilds_extended_64461276",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#2C0B0D",
+      "fogColor": "#330808",
+      "waterColor": "#E35824",
+      "waterFogColor": "#761B07",
+      "grassColor": "#8A4424",
+      "foliageColor": "#9A4D37",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "children": [
+    "temperate/highlands"
+  ],
+  "generators": [
+    {
+      "min": 24,
+      "max": 37,
+      "generator": "plain"
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    {
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/netherrack-1-3",
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    {
+      "chance": 0.125,
+      "place": [
+        "underworld/wastes/clutter/oakshrub1",
+        "underworld/wastes/clutter/oakshrub2",
+        "underworld/wastes/clutter/oakshrub3"
+      ],
+      "translate": {
+        "y": -1
+      }
+    },
+    "snippet/object-placer/wastes/obelisk-c0-001",
+    {
+      "chance": 0.001,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/wastes/clutter/camp1",
+        "underworld/wastes/clutter/bincluster1"
+      ]
+    },
+    "snippet/object-placer/wastes/pumpkins-paint-c0-008"
+  ],
+  "decorators": [
+    {
+      "chance": 0.22,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.126,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        },
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.0009,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        },
+        {
+          "block": "minecraft:fire"
+        },
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.02,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        },
+        {
+          "block": "minecraft:nether_sprouts"
+        },
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/shared/fungus-c0-01",
+    "snippet/decorator/shared/fungus-c0-01",
+    "snippet/decorator/shared/fungus-c0-01",
+    "snippet/decorator/shared/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "effects": [
+    {
+      "interval": 250,
+      "chance": 5,
+      "particleEffect": "LAVA",
+      "particleOffset": 2,
+      "particleAltY": 0.2,
+      "particleCount": 5
+    }
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp22-perlin-crack416"
+}

@@ -1,0 +1,120 @@
+{
+  "entitySpawners": [
+    "nether/surface/nether-wastes",
+    "nether/cave"
+  ],
+  "name": "Underworld Oak Forest",
+  "color": "#913C21",
+  "rarity": 3,
+  "derivative": "minecraft:nether_wastes",
+  "vanillaDerivative": "minecraft:nether_wastes",
+  "customDerivitives": [
+    {
+      "id": "underworld_temperate_oak_forest_47f30c01",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#2E0E0B",
+      "fogColor": "#330808",
+      "waterColor": "#D1651D",
+      "waterFogColor": "#752211",
+      "grassColor": "#824C2D",
+      "foliageColor": "#92412D",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "children": [
+    "temperate/oak-forest-extended"
+  ],
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "max": 12,
+      "min": 5
+    },
+    {
+      "generator": "rare-hills",
+      "max": 40,
+      "min": 0
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/netherrack-basalt-blackstone",
+  "layers": [
+    "snippet/biome-palette/wastes/netherrack-gravel-1-in-40",
+    {
+      "minHeight": 2,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/netherrack-1-1"
+  ],
+  "objects": [
+    "snippet/object-placer/wastes/oak-mix-bush-c0-9",
+    "snippet/object-placer/wastes/boulder-c0-01",
+    "snippet/object-placer/wastes/smoakog-paint-c0-001",
+    "snippet/object-placer/wastes/pumpkins-paint-c0-008"
+  ],
+  "decorators": [
+    "snippet/decorator/wastes/fungus-sprouts-fire-c0-13-trioctave-z0-35",
+    {
+      "chance": 0.03,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.018,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.04,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.1,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.05,
+      "palette": [
+        {
+          "block": "minecraft:blackstone_slab"
+        }
+      ]
+    },
+    "snippet/decorator/shared/leaf-litter",
+    "snippet/decorator/shared/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp22-perlin-crack416"
+}

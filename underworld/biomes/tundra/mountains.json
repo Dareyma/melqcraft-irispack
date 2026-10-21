@@ -1,0 +1,152 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Tundra Mountains",
+  "color": "#5C5450",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "customDerivitives": [
+    {
+      "id": "underworld_tundra_mountains_9c1ed867",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#181414",
+      "fogColor": "#685F70",
+      "waterColor": "#C54811",
+      "waterFogColor": "#5B2515",
+      "grassColor": "#534845",
+      "foliageColor": "#5D5451",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "children": [
+    "tundra/mountains-extended-cliffs"
+  ],
+  "generators": [
+    {
+      "min": 66,
+      "max": 89,
+      "generator": "mountain"
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/wall/blackstone-basalt",
+  "layers": [
+    {
+      "minHeight": 3,
+      "maxHeight": 5,
+      "slopeCondition": {
+        "minimumSlope": 6.9
+      },
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:basalt"
+        },
+        {
+          "block": "minecraft:gravel"
+        }
+      ]
+    },
+    {
+      "minHeight": 3,
+      "maxHeight": 5,
+      "slopeCondition": {
+        "minimumSlope": 5.3
+      },
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:gravel"
+        }
+      ]
+    },
+    {
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    },
+    "snippet/biome-palette/stone/blackstone-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/basalt/gravelsplotch-paint-c0-75",
+    "snippet/object-placer/basalt/evergreen-c0-8",
+    "snippet/object-placer/basalt/obelisk-c0-005",
+    {
+      "chance": 0.25,
+      "place": [
+        "underworld/basalt/trees/spruce/pine1",
+        "underworld/basalt/trees/spruce/pine2",
+        "underworld/basalt/trees/spruce/pine3",
+        "underworld/basalt/trees/spruce/pine4",
+        "underworld/basalt/trees/spruce/pine5",
+        "underworld/basalt/trees/spruce/pine6",
+        "underworld/basalt/trees/spruce/pine7",
+        "underworld/basalt/trees/spruce/pine8",
+        "underworld/basalt/trees/spruce/pine9",
+        "underworld/basalt/trees/spruce/pine10",
+        "underworld/basalt/trees/spruce/pine11",
+        "underworld/basalt/trees/spruce/pine12"
+      ]
+    },
+    {
+      "chance": 0.008,
+      "mode": "PAINT",
+      "place": [
+        "underworld/basalt/clutter/pumpkins1",
+        "underworld/basalt/clutter/pumpkins2",
+        "underworld/basalt/clutter/pumpkins3",
+        "underworld/basalt/clutter/pumpkins4",
+        "underworld/basalt/clutter/pumpkins5",
+        "underworld/basalt/clutter/pumpkins6"
+      ],
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "max": 360,
+          "min": 0,
+          "interval": 90
+        }
+      },
+      "translate": {
+        "y": 1
+      }
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/shared/fire-sprouts-c0-0077",
+    "snippet/decorator/shared/fire-ages-c0-0003",
+    {
+      "chance": 0.06,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "childShrinkFactor": 8,
+  "terrain3D": "snippet/terrain-3d/mountains/amp30-perlin-crack448"
+}

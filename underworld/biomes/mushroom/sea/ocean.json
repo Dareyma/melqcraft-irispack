@@ -1,0 +1,212 @@
+{
+  "entitySpawners": [
+    "nether/lava",
+    "nether/cave"
+  ],
+  "name": "Underworld Mushroom Ocean",
+  "color": "#564E4C",
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "generators": [
+    {
+      "min": -82,
+      "max": -10,
+      "generator": "mountain"
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/blackstone-smooth-basalt",
+  "layers": [
+    {
+      "minHeight": 2,
+      "maxHeight": 3,
+      "zoom": 0.825,
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:basalt"
+        },
+        {
+          "block": "minecraft:gravel"
+        }
+      ]
+    },
+    {
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/blackstone-1-3-w2"
+  ],
+  "objects": [
+    {
+      "chance": 0.3,
+      "edit": [
+        {
+          "find": [
+            {
+              "block": "minecraft:shroomlight"
+            }
+          ],
+          "replace": {
+            "palette": [
+              {
+                "block": "minecraft:crimson_stem"
+              }
+            ]
+          }
+        }
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "underwater": true,
+      "place": [
+        "underworld/basalt/trees/mushroom/lumo1",
+        "underworld/basalt/trees/mushroom/lumo2",
+        "underworld/basalt/trees/mushroom/lumo3",
+        "underworld/basalt/trees/mushroom/lumo4",
+        "underworld/basalt/trees/mushroom/lumo5",
+        "underworld/basalt/trees/mushroom/lumo6",
+        "underworld/basalt/trees/mushroom/lumo7",
+        "underworld/basalt/trees/mushroom/lumo8",
+        "underworld/basalt/trees/mushroom/lumo9",
+        "underworld/basalt/trees/mushroom/lumo10"
+      ]
+    },
+    {
+      "chance": 0.25,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "underwater": true,
+      "place": [
+        "underworld/basalt/trees/mushroom/lumo1",
+        "underworld/basalt/trees/mushroom/lumo2",
+        "underworld/basalt/trees/mushroom/lumo3",
+        "underworld/basalt/trees/mushroom/lumo4",
+        "underworld/basalt/trees/mushroom/lumo5",
+        "underworld/basalt/trees/mushroom/lumo6",
+        "underworld/basalt/trees/mushroom/lumo7",
+        "underworld/basalt/trees/mushroom/lumo8",
+        "underworld/basalt/trees/mushroom/lumo9",
+        "underworld/basalt/trees/mushroom/lumo10"
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.06,
+      "zoom": 20,
+      "palette": [
+        {
+          "block": "minecraft:lava"
+        }
+      ]
+    },
+    {
+      "chance": 0.0006,
+      "zoom": 1,
+      "palette": [
+        {
+          "block": "minecraft:soul_sand"
+        },
+        {
+          "block": "minecraft:magma_block"
+        }
+      ]
+    },
+    {
+      "chance": 0.1,
+      "stackMax": 9,
+      "zoom": 1,
+      "palette": [
+        {
+          "block": "minecraft:lava"
+        }
+      ],
+      "stackMin": 1
+    },
+    {
+      "chance": 0.005,
+      "zoom": 1,
+      "palette": [
+        {
+          "block": "minecraft:glowstone"
+        },
+        {
+          "block": "minecraft:glowstone"
+        },
+        {
+          "block": "minecraft:glowstone"
+        },
+        {
+          "block": "minecraft:glowstone"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "slab": {
+    "palette": [
+      {
+        "data": {
+          "waterlogged": false,
+          "type": "bottom"
+        },
+        "block": "minecraft:polished_blackstone_brick_slab"
+      },
+      {
+        "data": {
+          "waterlogged": false,
+          "type": "bottom"
+        },
+        "block": "minecraft:blackstone_slab"
+      },
+      {
+        "weight": 1,
+        "block": "minecraft:air"
+      }
+    ]
+  },
+  "customDerivitives": [
+    {
+      "id": "underworld_mushroom_sea_ocean_28dae2d5",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#181313",
+      "fogColor": "#685F70",
+      "waterColor": "#BC4823",
+      "waterFogColor": "#542315",
+      "grassColor": "#524743",
+      "foliageColor": "#756A67",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

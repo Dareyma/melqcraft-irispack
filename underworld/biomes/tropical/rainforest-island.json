@@ -1,0 +1,122 @@
+{
+  "entitySpawners": [
+    "nether/surface/crimson-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld Tropical Rainforest Island",
+  "color": "#BB3834",
+  "rarity": 1,
+  "derivative": "minecraft:crimson_forest",
+  "vanillaDerivative": "minecraft:crimson_forest",
+  "customDerivitives": [
+    {
+      "id": "underworld_tropical_rainforest_island_8cd1e4bd",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#37060A",
+      "fogColor": "#330303",
+      "waterColor": "#C23D2D",
+      "waterFogColor": "#6C0F10",
+      "grassColor": "#AC3B49",
+      "foliageColor": "#95292C",
+      "ambientParticle": {
+        "particle": "minecraft:crimson_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "min": 25,
+      "max": 65,
+      "generator": "mountain"
+    }
+  ],
+  "wall": "snippet/biome-palette/basalt/wall-crimson-hyphae-wart-block",
+  "layers": [
+    {
+      "palette": [
+        {
+          "block": "minecraft:crimson_nylium"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 4,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/crimson/bincluster-paint-c0-0025",
+    "snippet/object-placer/crimson/camp-c0-00375",
+    "snippet/object-placer/crimson/jungle-coco-large-organic-stilt-c0-4",
+    "snippet/object-placer/crimson/jungle-small-organic-stilt-c0-45",
+    "snippet/object-placer/crimson/boulder-c0-06",
+    "snippet/object-placer/crimson/jungle-large-paint-c0-01",
+    "snippet/object-placer/crimson/melons-paint-c0-008"
+  ],
+  "decorators": [
+    "snippet/decorator/basalt/wart-block-fungus-sprouts-c0-45",
+    {
+      "chance": 0.1,
+      "variance": {
+        "style": "NOWHERE"
+      },
+      "zoom": 10,
+      "palette": [
+        {
+          "weight": 3,
+          "block": "minecraft:crimson_hyphae"
+        }
+      ],
+      "heightVariance": {
+        "style": "NOWHERE"
+      }
+    },
+    {
+      "chance": 0.5,
+      "zoom": 10,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        },
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "seaLayers": [
+    {
+      "minHeight": 64,
+      "maxHeight": 64,
+      "palette": [
+        {
+          "block": "minecraft:air"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "particleAltX": 0.301,
+      "particleAltY": -0.33885,
+      "particleAltZ": 0.301,
+      "chance": 1,
+      "particleEffect": "CRIMSON_SPORE",
+      "particleOffset": 12,
+      "interval": 550,
+      "particleCount": 0
+    }
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp24-nowhere-crack448"
+}

@@ -1,0 +1,122 @@
+{
+  "name": "Underworld Sandstone Oasis Caverns",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "style": {
+      "style": "FRACTAL_WATER",
+      "zoom": 0.72
+    },
+    "palette": [
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 5
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 4
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 2
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 2
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:basalt",
+        "weight": 1
+      }
+    ]
+  },
+  "layers": [
+    {
+      "maxHeight": 2,
+      "minHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:soul_sand",
+          "weight": 5
+        },
+        {
+          "block": "minecraft:soul_sand",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:netherrack",
+          "weight": 1
+        }
+      ],
+      "style": {
+        "style": "SIMPLEX",
+        "zoom": 0.92
+      }
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "maxHeight": 2,
+      "minHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 8
+        }
+      ]
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/soul/jungle-rubble-carve-c0-21-d4",
+    "snippet/object-placer/soul/desertpost-rock-carve-c0-36",
+    "snippet/object-placer/soul/desertpost-rock-carve-c0-0972",
+    "snippet/object-placer/soul/mlandstone-carve-c0-135"
+  ],
+  "caveProfile": "snippet/cave-profile/hollows/sand-shallow-y700",
+  "caveMinDepthBelowSurface": 2,
+  "children": [
+    "carving/sand-hollows",
+    "carving/mixed-sandstone",
+    "carving/sandstone-child"
+  ],
+  "childShrinkFactor": 1.3,
+  "childStyle": {
+    "style": "SIMPLEX",
+    "zoom": 0.94
+  },
+  "decorators": [
+    "snippet/decorator/soul/soul-fire-sprouts-c0-018"
+  ],
+  "color": "#6B8286",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_sandstone_afdadce1",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#111B1E",
+      "fogColor": "#1B4745",
+      "waterColor": "#507D83",
+      "waterFogColor": "#27444A",
+      "grassColor": "#65767B",
+      "foliageColor": "#74878D",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

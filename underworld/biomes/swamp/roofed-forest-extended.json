@@ -1,0 +1,80 @@
+{
+  "entitySpawners": [
+    "nether/surface/warped-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld Swamp Roofed Forest",
+  "color": "#2C998C",
+  "rarity": 1,
+  "derivative": "minecraft:warped_forest",
+  "vanillaDerivative": "minecraft:warped_forest",
+  "children": [
+    "swamp/sea/lake"
+  ],
+  "generators": [
+    {
+      "min": 45,
+      "max": 61,
+      "generator": "mountain"
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    "snippet/biome-palette/warped/nylium",
+    "snippet/biome-palette/warped/netherrack-2-4",
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/warped/mroofed-c0-1",
+    "snippet/object-placer/warped/mushroom-brown-red-c0-02",
+    "snippet/object-placer/warped/mushroom-brown-red-c0-07",
+    "snippet/object-placer/warped/troofed-c0-7",
+    "snippet/object-placer/warped/boulder-c0-135",
+    "snippet/object-placer/warped/stump-paint-c0-1",
+    "snippet/object-placer/warped/oakclutt-c0-3",
+    "snippet/object-placer/warped/genericgrave-c0-001"
+  ],
+  "decorators": [
+    "snippet/decorator/warped/warped-fungus-c0-01",
+    {
+      "chance": 0.0002,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/warped/warped-buttons-c0-003",
+    {
+      "chance": 0.45,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_swamp_roofed_forest_extended_4676144e",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#051A1F",
+      "fogColor": "#1A051A",
+      "waterColor": "#339C8F",
+      "waterFogColor": "#065D5D",
+      "grassColor": "#1E8182",
+      "foliageColor": "#1D7871",
+      "ambientParticle": {
+        "particle": "minecraft:warped_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp24-nowhere-crack448"
+}

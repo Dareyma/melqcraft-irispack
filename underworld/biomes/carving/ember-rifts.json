@@ -1,0 +1,182 @@
+{
+  "name": "Underworld Ember Rifts",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:basalt"
+      },
+      {
+        "block": "minecraft:basalt"
+      },
+      {
+        "block": "minecraft:blackstone"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "minHeight": 1,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:magma_block"
+        }
+      ]
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "minHeight": 1,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:magma_block"
+        }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.022,
+      "partOf": "CEILING",
+      "stackMin": 1,
+      "stackMax": 2,
+      "palette": [
+        {
+          "block": "minecraft:glowstone"
+        }
+      ]
+    },
+    {
+      "chance": 0.02,
+      "absoluteMaxStack": 1,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "chance": 0.01,
+      "density": 1,
+      "carvingSupport": "CARVING_ONLY",
+      "caveAnchorMode": "FLOOR",
+      "mode": "ORGANIC_STILT",
+      "place": [
+        "underworld/soul/clutter/lava-cup-1",
+        "underworld/soul/clutter/lava-cup-2"
+      ]
+    },
+    {
+      "chance": 0.21,
+      "density": 4,
+      "carvingSupport": "CARVING_ONLY",
+      "caveAnchorMode": "PROFILE_DEFAULT",
+      "translate": {
+        "y": -1
+      },
+      "place": [
+        "underworld/soul/clutter/magmaspire1",
+        "underworld/soul/clutter/magmaspire2",
+        "underworld/soul/clutter/magmaspire3"
+      ],
+      "bottom": true,
+      "force": true,
+      "scale": {
+        "size": 0.75
+      }
+    },
+    {
+      "chance": 0.165,
+      "density": 4,
+      "carvingSupport": "CARVING_ONLY",
+      "caveAnchorMode": "PROFILE_DEFAULT",
+      "translate": {
+        "y": -1
+      },
+      "place": [
+        "underworld/soul/clutter/magmaspire1",
+        "underworld/soul/clutter/magmaspire2",
+        "underworld/soul/clutter/magmaspire3",
+        "underworld/soul/clutter/rock1",
+        "underworld/soul/clutter/rock2",
+        "underworld/soul/clutter/rock3",
+        "underworld/soul/clutter/rock4",
+        "underworld/soul/clutter/boulder1",
+        "underworld/soul/clutter/boulder2",
+        "underworld/soul/clutter/boulder3",
+        "underworld/soul/clutter/boulder4"
+      ],
+      "bottom": true,
+      "force": true,
+      "scale": {
+        "size": 0.75
+      }
+    },
+    {
+      "chance": 0.0972,
+      "density": 4,
+      "carvingSupport": "CARVING_ONLY",
+      "caveAnchorMode": "PROFILE_DEFAULT",
+      "translate": {
+        "y": -1
+      },
+      "place": [
+        "underworld/soul/clutter/magmaspire1",
+        "underworld/soul/clutter/magmaspire2",
+        "underworld/soul/clutter/magmaspire3",
+        "underworld/soul/clutter/rock1",
+        "underworld/soul/clutter/rock2",
+        "underworld/soul/clutter/rock3",
+        "underworld/soul/clutter/boulder7",
+        "underworld/soul/clutter/boulder8",
+        "underworld/soul/clutter/boulder9"
+      ],
+      "bottom": true,
+      "force": true,
+      "scale": {
+        "size": 0.75
+      }
+    }
+  ],
+  "caveProfile": "snippet/cave-profile/rifts/ember-volcanic-y520",
+  "caveMinDepthBelowSurface": 10,
+  "children": [
+    "carving/ember-rifts-child"
+  ],
+  "childStyle": {
+    "style": "CELLULAR_IRIS_DOUBLE",
+    "zoom": 0.74
+  },
+  "childShrinkFactor": 1.54,
+  "color": "#63797D",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_ember_rifts_7883a594",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#121B1E",
+      "fogColor": "#1B4745",
+      "waterColor": "#679399",
+      "waterFogColor": "#28444C",
+      "grassColor": "#6D8184",
+      "foliageColor": "#6D8486",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

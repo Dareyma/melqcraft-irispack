@@ -1,0 +1,153 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Mountain Plains Hills",
+  "color": "#5E5652",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "max": 70,
+      "min": 50
+    },
+    {
+      "generator": "mountain",
+      "max": 5,
+      "min": 1
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:blackstone"
+      },
+      {
+        "block": "minecraft:basalt"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    "snippet/biome-palette/basalt/blackstone-1-1"
+  ],
+  "objects": [
+    "snippet/object-placer/basalt/oak-true-c0-07",
+    {
+      "place": [
+        "underworld/basalt/trees/oak/lponderosa1",
+        "underworld/basalt/trees/oak/lponderosa2",
+        "underworld/basalt/trees/oak/lponderosa3",
+        "underworld/basalt/trees/oak/lponderosa4",
+        "underworld/basalt/trees/oak/lponderosa5",
+        "underworld/basalt/trees/oak/lponderosa6",
+        "underworld/basalt/trees/oak/lponderosa7",
+        "underworld/basalt/trees/oak/lponderosa8",
+        "underworld/basalt/trees/oak/lponderosa9",
+        "underworld/basalt/trees/oak/lponderosa10",
+        "underworld/basalt/trees/oak/lponderosa11",
+        "underworld/basalt/trees/oak/lponderosa13",
+        "underworld/basalt/trees/oak/lponderosa14",
+        "underworld/basalt/trees/oak/lponderosa15"
+      ],
+      "mode": "CENTER_HEIGHT",
+      "chance": 0.28,
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": -360,
+          "max": 360
+        }
+      }
+    },
+    {
+      "place": [
+        "underworld/basalt/clutter/arbusto1",
+        "underworld/basalt/clutter/arbusto2",
+        "underworld/basalt/clutter/arbusto3",
+        "underworld/basalt/clutter/arbusto4",
+        "underworld/basalt/clutter/arbusto5"
+      ],
+      "chance": 0.17,
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": -360,
+          "max": 360
+        }
+      }
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/basalt/fungus-sprouts-fire-c0-13-trioctave-z0-3",
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.025,
+      "palette": [
+        {
+          "block": "minecraft:nether_wart_block"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/leaf-litter",
+    "snippet/decorator/shared/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_mountain_mplain_extended_d7e77286",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#181414",
+      "fogColor": "#685F70",
+      "waterColor": "#C35413",
+      "waterFogColor": "#4F2211",
+      "grassColor": "#635853",
+      "foliageColor": "#6E6562",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": "snippet/terrain-3d/mountains/amp30-perlin-crack448"
+}

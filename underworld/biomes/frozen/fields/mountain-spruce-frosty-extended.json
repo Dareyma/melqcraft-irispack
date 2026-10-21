@@ -1,0 +1,150 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Mountain Forest",
+  "color": "#655A57",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "customDerivitives": [
+    {
+      "id": "underworld_frozen_fields_mountain_spruce_frosty_extended_ebe36597",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#151111",
+      "fogColor": "#685F70",
+      "waterColor": "#BD5924",
+      "waterFogColor": "#4C2516",
+      "grassColor": "#625651",
+      "foliageColor": "#726763",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "max": 70,
+      "min": 50
+    },
+    {
+      "generator": "mountain",
+      "max": 5,
+      "min": 1
+    }
+  ],
+  "wall": "snippet/biome-palette/basalt/wall-blackstone-basalt-gravel-nylium",
+  "layers": [
+    "snippet/biome-palette/basalt/basalt-blackstone-1-1-slope3-3",
+    "snippet/biome-palette/basalt/blackstone-3-3-slope3",
+    "snippet/biome-palette/basalt/blackstone-3-3-slope3-x2"
+  ],
+  "objects": [
+    "snippet/object-placer/basalt/camp-paint-c0-005",
+    "snippet/object-placer/basalt/sbush-paint-c0-1",
+    "snippet/object-placer/basalt/sbush-paint-c0-1",
+    "snippet/object-placer/basalt/sbush-paint-c0-1",
+    "snippet/object-placer/basalt/spruce-c1"
+  ],
+  "decorators": [
+    "snippet/decorator/basalt/fire-sprouts-c0-001425-z1",
+    "snippet/decorator/basalt/fire-ages-c0-003",
+    {
+      "chance": 0.25,
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:polished_blackstone_button",
+          "data": {
+            "face": "floor"
+          }
+        }
+      ]
+    },
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:polished_blackstone_button",
+          "data": {
+            "face": "floor"
+          }
+        }
+      ]
+    },
+    {
+      "chance": 0.06,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.075,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.018,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.1,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.05,
+      "palette": [
+        {
+          "block": "minecraft:blackstone_slab"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30107,
+    "amplitude": 26,
+    "horizontalScale": 160,
+    "verticalScale": 48,
+    "densityStyle": {
+      "style": "SIMPLEX"
+    },
+    "crackDepth": 0,
+    "crackWidth": 2.25,
+    "crackScale": 448,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.3,
+    "slopeFade": 0.42,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

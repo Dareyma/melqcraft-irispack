@@ -1,0 +1,158 @@
+{
+  "name": "Underworld Sunken Oasis Hollows",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "style": {
+      "style": "FRACTAL_WATER",
+      "zoom": 0.72
+    },
+    "palette": [
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 5
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 4
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 2
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 2
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:basalt",
+        "weight": 1
+      }
+    ]
+  },
+  "layers": [
+    {
+      "style": {
+        "style": "SIMPLEX",
+        "zoom": 0.92
+      },
+      "minHeight": 1,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:soul_sand",
+          "weight": 5
+        },
+        {
+          "block": "minecraft:soul_sand",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:netherrack",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "style": {
+        "style": "SIMPLEX",
+        "zoom": 0.92
+      },
+      "minHeight": 1,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:soul_sand",
+          "weight": 5
+        },
+        {
+          "block": "minecraft:soul_sand",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:netherrack",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.028,
+      "absoluteMaxStack": 1,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    {
+      "chance": 0.014,
+      "absoluteMaxStack": 1,
+      "palette": [
+        {
+          "block": "minecraft:warped_stem"
+        }
+      ]
+    },
+    "snippet/decorator/soul/soul-fire-sprouts-c0-018"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/jungle-rubble-carve-c0-21-d4",
+    "snippet/object-placer/soul/desertpost-rock-carve-c0-36",
+    "snippet/object-placer/soul/desertpost-rock-carve-c0-0972",
+    "snippet/object-placer/soul/mlandstone-carve-c0-135"
+  ],
+  "caveProfile": "snippet/cave-profile/hollows/sand-shallow-y700",
+  "caveMinDepthBelowSurface": 2,
+  "children": [
+    "carving/sand-hollows-child"
+  ],
+  "childStyle": {
+    "style": "CELLULAR_IRIS_DOUBLE",
+    "zoom": 0.82
+  },
+  "childShrinkFactor": 1.54,
+  "color": "#6E858A",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_sand_hollows_08e8740e",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#10181D",
+      "fogColor": "#1B4745",
+      "waterColor": "#507883",
+      "waterFogColor": "#233B3E",
+      "grassColor": "#6F8587",
+      "foliageColor": "#798D91",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

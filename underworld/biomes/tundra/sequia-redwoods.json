@@ -1,0 +1,162 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Tundra Sequoia Redwoods",
+  "color": "#6C8183",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_tundra_sequia_redwoods_f7d32b0b",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#11191D",
+      "fogColor": "#1B4745",
+      "waterColor": "#639497",
+      "waterFogColor": "#293F45",
+      "grassColor": "#5C6D73",
+      "foliageColor": "#6B7F84",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "children": [
+    "tundra/sequia-redwoods-extended"
+  ],
+  "generators": [
+    {
+      "min": 17,
+      "max": 19,
+      "generator": "plain"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:soul_soil"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "style": {
+        "style": "IRIS_DOUBLE",
+        "fracture": {
+          "style": "NOWHERE",
+          "zoom": 0.2
+        }
+      },
+      "zoom": 0.2,
+      "palette": [
+        {
+          "weight": 2,
+          "block": "minecraft:soul_soil"
+        },
+        {
+          "weight": 2,
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/soul-soil-2-4",
+    "snippet/biome-palette/soul/basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/gravelsplotch-paint-c0-75",
+    "snippet/object-placer/soul/camp-c0-00375",
+    {
+      "mode": "FAST_STILT",
+      "chance": 0.0025,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/soul/clutter/bincluster1"
+      ]
+    },
+    "snippet/object-placer/soul/sup-pine-c0-69",
+    "snippet/object-placer/soul/boulder-c0-035",
+    "snippet/object-placer/soul/stump-paint-c0-075",
+    {
+      "chance": 0.008,
+      "mode": "FAST_STILT",
+      "place": [
+        "underworld/soul/clutter/pumpkins1",
+        "underworld/soul/clutter/pumpkins2",
+        "underworld/soul/clutter/pumpkins3",
+        "underworld/soul/clutter/pumpkins4",
+        "underworld/soul/clutter/pumpkins5",
+        "underworld/soul/clutter/pumpkins6"
+      ],
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "max": 360,
+          "min": 0,
+          "interval": 90
+        }
+      },
+      "translate": {
+        "y": 1
+      }
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/shared/blackstone-buttons-c0-009",
+    "snippet/decorator/soul/soul-fire-roots-c0-001425-z0-02",
+    {
+      "chance": 0.01335,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    "snippet/decorator/soul/soul-fire-c0-0003",
+    {
+      "chance": 0.0045,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.01,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    {
+      "chance": 0.01,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:crimson_roots"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "childShrinkFactor": 2.4,
+  "terrain3D": "snippet/terrain-3d/rolling/amp10-perlin-crack392"
+}

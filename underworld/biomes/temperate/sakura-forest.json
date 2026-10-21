@@ -1,0 +1,187 @@
+{
+  "entitySpawners": [
+    "nether/surface/nether-wastes",
+    "nether/cave"
+  ],
+  "name": "Underworld Sakura Forest",
+  "color": "#90331E",
+  "rarity": 4,
+  "derivative": "minecraft:nether_wastes",
+  "vanillaDerivative": "minecraft:nether_wastes",
+  "customDerivitives": [
+    {
+      "id": "underworld_temperate_sakura_forest_e92fbeca",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#300F0C",
+      "fogColor": "#330808",
+      "waterColor": "#EC5D19",
+      "waterFogColor": "#751200",
+      "grassColor": "#7A3725",
+      "foliageColor": "#8D4B28",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "min": 4,
+      "max": 7,
+      "generator": "plain"
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    {
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/netherrack-1-3",
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/wastes/oak-mix-c0-2",
+    "snippet/object-placer/wastes/camp-1345-min-height-c0-008",
+    {
+      "chance": 0.2,
+      "mode": "MIN_HEIGHT",
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "edit": [
+        "snippet/object-block-replacer/wastes/nether-and-warped-wart-to-warped-wart-c0-05"
+      ],
+      "place": [
+        "underworld/wastes/trees/sakura/genericsak1",
+        "underworld/wastes/trees/sakura/genericsak2",
+        "underworld/wastes/trees/sakura/genericsak3",
+        "underworld/wastes/trees/sakura/genericsak4",
+        "underworld/wastes/trees/sakura/genericsak5"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    "snippet/object-placer/wastes/obelisk-c0-003",
+    "snippet/object-placer/wastes/literalgarbage-paint-c0-001"
+  ],
+  "decorators": [
+    "snippet/decorator/wastes/fire-c0-18",
+    {
+      "chance": 0.05,
+      "zoom": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:polished_blackstone_button",
+          "data": {
+            "face": "floor",
+            "facing": "east"
+          }
+        }
+      ]
+    },
+    {
+      "chance": 0.05,
+      "zoom": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:polished_blackstone_button",
+          "data": {
+            "face": "floor",
+            "facing": "north"
+          }
+        }
+      ]
+    },
+    {
+      "chance": 0.05,
+      "zoom": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:polished_blackstone_button",
+          "data": {
+            "face": "floor",
+            "facing": "west"
+          }
+        }
+      ]
+    },
+    {
+      "chance": 0.05,
+      "zoom": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:polished_blackstone_button",
+          "data": {
+            "face": "floor",
+            "facing": "south"
+          }
+        }
+      ]
+    },
+    {
+      "chance": 0.03,
+      "zoom": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:nether_wart_block"
+        }
+      ]
+    },
+    {
+      "chance": 0.02,
+      "zoom": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.06,
+      "zoom": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    {
+      "chance": 0.03,
+      "zoom": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:blackstone_slab"
+        }
+      ]
+    },
+    "snippet/decorator/shared/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/rolling/amp10-perlin-crack392"
+}

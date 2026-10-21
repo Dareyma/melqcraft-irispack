@@ -1,0 +1,155 @@
+{
+  "entitySpawners": [
+    "nether/surface/nether-wastes",
+    "nether/cave"
+  ],
+  "name": "Underworld Birch Thin Forest",
+  "color": "#902818",
+  "rarity": 4,
+  "derivative": "minecraft:nether_wastes",
+  "vanillaDerivative": "minecraft:nether_wastes",
+  "generators": [
+    {
+      "min": 5,
+      "max": 15,
+      "generator": "highplains"
+    },
+    {
+      "min": 0,
+      "max": 40,
+      "generator": "rare-hills"
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    {
+      "palette": [
+        {
+          "block": "minecraft:netherrack",
+          "weight": 30
+        },
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/netherrack-1-3",
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/wastes/bincluster-paint-c0-0025",
+    "snippet/object-placer/wastes/camp-1-paint-c0-00375",
+    "snippet/object-placer/wastes/antioch-birch-c0-9",
+    {
+      "chance": 0.08,
+      "density": 1,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/wastes/trees/birch/antioch3b",
+        "underworld/wastes/trees/birch/antioch4b",
+        "underworld/wastes/trees/birch/antioch5b",
+        "underworld/wastes/trees/birch/antioch6b"
+      ]
+    },
+    "snippet/object-placer/wastes/pumpkins-paint-c0-008"
+  ],
+  "decorators": [
+    {
+      "chance": 0.021,
+      "zoom": 0.1,
+      "palette": [
+        {
+          "block": "minecraft:fire",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:nether_sprouts",
+          "weight": 10
+        },
+        {
+          "block": "minecraft:nether_sprouts",
+          "weight": 10
+        },
+        {
+          "block": "minecraft:crimson_fungus",
+          "weight": 10
+        },
+        {
+          "block": "minecraft:crimson_fungus",
+          "weight": 10
+        },
+        {
+          "block": "minecraft:fire",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:fire",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "chance": 0.12,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:fire",
+          "weight": 10
+        },
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.017,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/wastes/wildflowers",
+    "snippet/decorator/shared/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_temperate_birch_thin_ccdb300e",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#280A0B",
+      "fogColor": "#330808",
+      "waterColor": "#E35A25",
+      "waterFogColor": "#741B0D",
+      "grassColor": "#712E1E",
+      "foliageColor": "#824A2B",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp22-perlin-crack416"
+}

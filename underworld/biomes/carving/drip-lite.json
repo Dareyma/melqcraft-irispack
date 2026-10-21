@@ -1,0 +1,100 @@
+{
+  "name": "Underworld Dripstone Cavern Child",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:basalt"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "maxHeight": 2,
+      "minHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.03,
+      "scaleStack": true,
+      "stackMin": 5,
+      "stackMax": 55,
+      "absoluteMaxStack": 4,
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    },
+    {
+      "partOf": "CEILING",
+      "chance": 0.03,
+      "absoluteMaxStack": 4,
+      "scaleStack": true,
+      "stackMin": 5,
+      "stackMax": 55,
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "style": {
+        "style": "NOWHERE"
+      },
+      "maxHeight": 2,
+      "minHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:basalt",
+          "weight": 15
+        }
+      ]
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/soul/stoneclutt-carve-c0-21-d4",
+    "snippet/object-placer/soul/rock-rubble-carve-c0-165",
+    "snippet/object-placer/soul/rock-rubble-carve-c0-0972"
+  ],
+  "caveProfile": "snippet/cave-profile/caverns/deep-perlin-y700",
+  "caveMinDepthBelowSurface": 10,
+  "children": [
+    "carving/drip-lite-child"
+  ],
+  "childStyle": {
+    "style": "PERLIN_IRIS",
+    "zoom": 1.34
+  },
+  "childShrinkFactor": 1.42,
+  "color": "#687D80",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_drip_lite_28b4a46a",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#111B20",
+      "fogColor": "#1B4745",
+      "waterColor": "#588B93",
+      "waterFogColor": "#273F47",
+      "grassColor": "#6B7E82",
+      "foliageColor": "#7B9294",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

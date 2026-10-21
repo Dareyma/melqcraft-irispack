@@ -1,0 +1,79 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Tundra Ether",
+  "color": "#6E7F85",
+  "rarity": 13,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_tundra_ether_extended_ac0d224d",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#12191D",
+      "fogColor": "#1B4745",
+      "waterColor": "#4F7781",
+      "waterFogColor": "#284248",
+      "grassColor": "#627479",
+      "foliageColor": "#708487",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "max": 42,
+      "min": 34
+    },
+    {
+      "generator": "mountain",
+      "max": 14,
+      "min": 8
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/soul/wall-basalt",
+  "layers": [
+    "snippet/biome-palette/soul/basalt-soul-sand-3-5-steep6-9",
+    "snippet/biome-palette/soul/soul-soil-soul-sand-3-5-steep5-3",
+    {
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/gravelsplotch-paint-c0-35",
+    "snippet/object-placer/soul/dotree-c0-8",
+    "snippet/object-placer/soul/obelisk-c0-01"
+  ],
+  "decorators": [
+    "snippet/decorator/soul/soul-fire-roots-c0-0077",
+    "snippet/decorator/soul/soul-fire-c0-0003",
+    {
+      "chance": 0.06,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "childShrinkFactor": 8,
+  "terrain3D": "snippet/terrain-3d/hills/amp18-iris-half-crack416"
+}

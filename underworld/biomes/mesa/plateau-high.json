@@ -1,0 +1,156 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Mesa Plateau High",
+  "color": "#645956",
+  "rarity": 3,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "children": [
+    "mesa/plateau-dirt-high"
+  ],
+  "generators": [
+    {
+      "min": 70,
+      "max": 110,
+      "generator": "cracked-cliffs"
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "layers": [
+    {
+      "minHeight": 5,
+      "maxHeight": 5,
+      "style": {
+        "style": "NOWHERE"
+      },
+      "zoom": 0.4,
+      "palette": [
+        {
+          "block": "minecraft:nether_bricks"
+        },
+        {
+          "block": "minecraft:netherrack"
+        },
+        {
+          "block": "minecraft:netherrack"
+        },
+        {
+          "block": "minecraft:netherrack"
+        },
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "minHeight": 3,
+      "maxHeight": 8,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 8,
+      "palette": [
+        {
+          "block": "minecraft:magma_block"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 8,
+      "palette": [
+        {
+          "block": "minecraft:quartz_block"
+        }
+      ]
+    },
+    {
+      "minHeight": 4,
+      "maxHeight": 8,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "minHeight": 3,
+      "maxHeight": 8,
+      "palette": [
+        {
+          "block": "minecraft:glowstone"
+        }
+      ]
+    },
+    {
+      "minHeight": 3,
+      "maxHeight": 8,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.05,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "lockLayers": true,
+  "customDerivitives": [
+    {
+      "id": "underworld_mesa_plateau_high_112cc4be",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#171313",
+      "fogColor": "#685F70",
+      "waterColor": "#AE4C15",
+      "waterFogColor": "#571D14",
+      "grassColor": "#524742",
+      "foliageColor": "#655B58",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30119,
+    "amplitude": 40,
+    "horizontalScale": 176,
+    "verticalScale": 48,
+    "densityStyle": {
+      "style": "PERLIN"
+    },
+    "crackDepth": 4,
+    "crackWidth": 2,
+    "crackScale": 392,
+    "crackStyle": {
+      "style": "PERLIN"
+    },
+    "minimumSlope": 0.3,
+    "slopeFade": 0.4,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

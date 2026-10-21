@@ -1,0 +1,95 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Calcite Peaks",
+  "color": "#685E5B",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "generators": [
+    {
+      "min": 143,
+      "max": 220,
+      "generator": "mountain"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:blackstone"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "minHeight": 2,
+      "maxHeight": 2,
+      "slopeCondition": {
+        "minimumSlope": 0,
+        "maximumSlope": 3.6
+      },
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 2,
+      "slopeCondition": {
+        "minimumSlope": 3.6,
+        "maximumSlope": 13.6
+      },
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    }
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_mountain_calcite_base_2bae18be",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#161313",
+      "fogColor": "#685F70",
+      "waterColor": "#CE5723",
+      "waterFogColor": "#581810",
+      "grassColor": "#5D524E",
+      "foliageColor": "#726965",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30109,
+    "amplitude": 36,
+    "horizontalScale": 120,
+    "verticalScale": 52,
+    "densityStyle": {
+      "style": "IRIS_HALF"
+    },
+    "crackDepth": 2,
+    "crackWidth": 2.25,
+    "crackScale": 416,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.3,
+    "slopeFade": 0.42,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

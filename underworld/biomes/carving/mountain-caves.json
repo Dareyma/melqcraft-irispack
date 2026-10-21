@@ -1,0 +1,84 @@
+{
+  "name": "Underworld M cave",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:basalt",
+        "weight": 3
+      },
+      {
+        "block": "minecraft:blackstone"
+      },
+      {
+        "block": "minecraft:basalt"
+      }
+    ]
+  },
+  "layers": [
+    "snippet/biome-palette/soul/basalt-2-2"
+  ],
+  "caveCeilingLayers": [
+    "snippet/biome-palette/soul/basalt-2-2"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/stoneclutt-carve-c0-21-d4",
+    "snippet/object-placer/soul/rock-rubble-carve-c0-165",
+    {
+      "chance": 0.0972,
+      "density": 4,
+      "carvingSupport": "CARVING_ONLY",
+      "caveAnchorMode": "PROFILE_DEFAULT",
+      "translate": {
+        "y": -1
+      },
+      "place": [
+        "underworld/soul/clutter/stoneclutt3",
+        "underworld/soul/clutter/stoneclutt4",
+        "underworld/soul/clutter/stoneclutt5",
+        "underworld/soul/clutter/rock1",
+        "underworld/soul/clutter/rock2",
+        "underworld/soul/clutter/rock3",
+        "underworld/soul/clutter/boulder7",
+        "underworld/soul/clutter/boulder8",
+        "underworld/soul/clutter/boulder9"
+      ],
+      "bottom": true,
+      "force": true,
+      "scale": {
+        "size": 0.75
+      }
+    }
+  ],
+  "caveProfile": "snippet/cave-profile/ravines/drip-deep-y700",
+  "caveMinDepthBelowSurface": 10,
+  "children": [
+    "carving/mountain-caves-child"
+  ],
+  "childStyle": {
+    "style": "SIMPLEX",
+    "zoom": 0.7
+  },
+  "childShrinkFactor": 1.3,
+  "color": "#677C80",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_mountain_caves_72175720",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#121A1E",
+      "fogColor": "#1B4745",
+      "waterColor": "#5D828B",
+      "waterFogColor": "#2D454B",
+      "grassColor": "#5F6D72",
+      "foliageColor": "#6E8083",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

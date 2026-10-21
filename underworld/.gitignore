@@ -1,0 +1,15 @@
+.DS_Store
+*.code-workspace
+
+.iris/
+.iris-trash/
+.idea/
+.cache/
+.codegraph/
+_docs/
+logs/
+
+externaldatapacks/
+datapack-imports/
+
+AGENTS.md

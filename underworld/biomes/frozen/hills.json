@@ -1,0 +1,107 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Frozen Hills",
+  "color": "#778B91",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_frozen_hills_6d48a2f1",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#10171A",
+      "fogColor": "#1B4745",
+      "waterColor": "#517781",
+      "waterFogColor": "#2C4549",
+      "grassColor": "#617376",
+      "foliageColor": "#75898D",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "children": [
+    "frozen/hills-extended",
+    "frozen/vander"
+  ],
+  "generators": [
+    {
+      "generator": "plain",
+      "max": 36,
+      "min": 28
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:basalt"
+      },
+      {
+        "block": "minecraft:basalt"
+      }
+    ]
+  },
+  "layers": [
+    "snippet/biome-palette/soul/soul-soil-0-2-slope3-5",
+    "snippet/biome-palette/soul/soul-soil-1-1-slope3-5",
+    "snippet/biome-palette/soul/soul-soil-7-18-slope3-5",
+    "snippet/biome-palette/soul/basalt-6-18"
+  ],
+  "objects": [
+    {
+      "edit": [
+        "snippet/object-block-replacer/soul/warped-wart-to-warped-wart-perlin"
+      ],
+      "place": [
+        "underworld/soul/trees/spruce/lfrostgeneric1",
+        "underworld/soul/trees/spruce/lfrostgeneric2",
+        "underworld/soul/trees/spruce/lfrostgeneric3",
+        "underworld/soul/trees/spruce/lfrostgeneric4",
+        "underworld/soul/trees/spruce/lfrostgeneric5",
+        "underworld/soul/trees/spruce/lfrostgeneric6",
+        "underworld/soul/trees/spruce/lfrostgeneric7",
+        "underworld/soul/trees/spruce/lfrostgeneric8",
+        "underworld/soul/trees/spruce/lfrostgeneric9",
+        "underworld/soul/trees/spruce/lfrostgeneric10",
+        "underworld/soul/trees/spruce/lfrostgeneric11",
+        "underworld/soul/trees/spruce/lfrostgeneric12",
+        "underworld/soul/trees/spruce/lfrostgeneric13",
+        "underworld/soul/trees/spruce/lfrostgeneric14",
+        "underworld/soul/trees/spruce/lfrostgeneric15",
+        "underworld/soul/trees/spruce/lfrostgeneric16",
+        "underworld/soul/trees/spruce/lfrostgeneric17",
+        "underworld/soul/trees/spruce/lfrostgeneric18",
+        "underworld/soul/trees/spruce/lfrostgeneric19",
+        "underworld/soul/trees/spruce/lfrostgeneric20"
+      ],
+      "chance": 0.62,
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": 0,
+          "max": 270
+        }
+      },
+      "warp": {
+        "style": "IRIS_DOUBLE",
+        "exponent": 1.2,
+        "zoom": 0.4
+      }
+    },
+    "snippet/object-placer/soul/obelisk-paint-c0-005"
+  ],
+  "decorators": [
+    "snippet/decorator/soul/soul-soil-air-c1",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp18-simplex-crack416"
+}

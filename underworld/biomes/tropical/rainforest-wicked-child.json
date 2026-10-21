@@ -1,0 +1,130 @@
+{
+  "entitySpawners": [
+    "nether/surface/crimson-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld Tropical Rainforest Wicked Child",
+  "color": "#A5302D",
+  "rarity": 1,
+  "derivative": "minecraft:crimson_forest",
+  "vanillaDerivative": "minecraft:crimson_forest",
+  "customDerivitives": [
+    {
+      "id": "underworld_tropical_rainforest_wicked_child_5354888d",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#2E080B",
+      "fogColor": "#330303",
+      "waterColor": "#C54932",
+      "waterFogColor": "#741913",
+      "grassColor": "#942329",
+      "foliageColor": "#932430",
+      "ambientParticle": {
+        "particle": "minecraft:crimson_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "min": 98,
+      "max": 170,
+      "generator": "mountain"
+    }
+  ],
+  "wall": "snippet/biome-palette/basalt/wall-crimson-hyphae-wart-block",
+  "layers": [
+    {
+      "palette": [
+        {
+          "block": "minecraft:crimson_nylium"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 4,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/crimson/bincluster-paint-c0-0025",
+    "snippet/object-placer/crimson/camp-c0-00375",
+    "snippet/object-placer/crimson/jungle-coco-large-organic-stilt-c0-4",
+    "snippet/object-placer/crimson/jungle-small-organic-stilt-c0-45",
+    "snippet/object-placer/crimson/boulder-paint-c0-06",
+    "snippet/object-placer/crimson/jungle-large-paint-c0-01",
+    "snippet/object-placer/crimson/melons-paint-c0-008"
+  ],
+  "decorators": [
+    "snippet/decorator/basalt/wart-block-fungus-sprouts-c0-45",
+    {
+      "chance": 0.02,
+      "variance": {
+        "style": "NOWHERE"
+      },
+      "zoom": 10,
+      "palette": [
+        {
+          "weight": 3,
+          "block": "minecraft:crimson_hyphae"
+        }
+      ],
+      "heightVariance": {
+        "style": "NOWHERE"
+      }
+    },
+    {
+      "chance": 0.5,
+      "zoom": 10,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        },
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "effects": [
+    {
+      "particleAltX": 0.301,
+      "particleAltY": -0.33885,
+      "particleAltZ": 0.301,
+      "chance": 1,
+      "particleEffect": "CRIMSON_SPORE",
+      "particleOffset": 12,
+      "interval": 550,
+      "particleCount": 3
+    }
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30113,
+    "amplitude": 42,
+    "horizontalScale": 144,
+    "verticalScale": 44,
+    "densityStyle": {
+      "style": "NOWHERE"
+    },
+    "crackDepth": 4,
+    "crackWidth": 2.25,
+    "crackScale": 336,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.2,
+    "slopeFade": 0.34,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

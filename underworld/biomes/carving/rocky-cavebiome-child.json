@@ -1,0 +1,192 @@
+{
+  "name": "Underworld Rocky Hollows Child",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "generators": [
+    {
+      "generator": "rare-hills",
+      "max": 1,
+      "min": 1
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/soul/stoneclutt-carve-c0-21-d6",
+    "snippet/object-placer/soul/rock-rubble-carve-c0-20625",
+    "snippet/object-placer/soul/rock-rubble-carve-c0-12636"
+  ],
+  "caveProfile": {
+    "enabled": true,
+    "verticalRange": {
+      "min": 6,
+      "max": 700
+    },
+    "baseDensityStyle": {
+      "style": "SIMPLEX",
+      "zoom": 0.59
+    },
+    "detailDensityStyle": {
+      "style": "IRIS_DOUBLE",
+      "zoom": 0.717
+    },
+    "warpStyle": {
+      "style": "PERLIN_IRIS",
+      "zoom": 0.38
+    },
+    "baseWeight": 0.81,
+    "detailWeight": 0.145,
+    "warpStrength": 0.2884,
+    "densityThreshold": {
+      "min": -0.145,
+      "max": -0.032,
+      "style": {
+        "style": "PERLIN_IRIS",
+        "zoom": 0.829
+      }
+    },
+    "thresholdBias": 0.1,
+    "sampleStep": 2,
+    "surfaceClearance": 5,
+    "allowSurfaceBreak": true,
+    "surfaceBreakStyle": {
+      "style": "PERLIN_IRIS",
+      "zoom": 0.756
+    },
+    "surfaceBreakNoiseThreshold": 0.61,
+    "surfaceBreakDepth": 18,
+    "surfaceBreakThresholdBoost": 0.1,
+    "objectMinDepthBelowSurface": 12,
+    "defaultObjectAnchor": "FLOOR",
+    "defaultObjectPlaceMode": "ORGANIC_STILT",
+    "anchorScanStep": 1,
+    "anchorSearchAttempts": 18,
+    "allowFluid": false,
+    "fluidMinDepthBelowSurface": 18,
+    "fluidRequiresFloor": true,
+    "allowLava": true,
+    "modules": [
+      {
+        "style": {
+          "style": "SIMPLEX",
+          "zoom": 0.98
+        },
+        "weight": 0.08,
+        "threshold": 0.02,
+        "verticalRange": {
+          "min": 24,
+          "max": 660
+        },
+        "invert": false
+      },
+      {
+        "style": {
+          "style": "SIMPLEX_VASCULAR",
+          "zoom": 0.282
+        },
+        "weight": 0.04,
+        "threshold": 0.08,
+        "verticalRange": {
+          "min": 8,
+          "max": 280
+        },
+        "invert": true
+      }
+    ],
+    "verticalEdgeFade": 24,
+    "verticalEdgeFadeStrength": 0.16,
+    "minCarveCells": 24,
+    "recoveryThresholdBoost": 0.07
+  },
+  "caveMinDepthBelowSurface": 8,
+  "derivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "style": {
+      "style": "SIMPLEX",
+      "zoom": 0.6
+    },
+    "palette": [
+      {
+        "block": "minecraft:basalt",
+        "weight": 6
+      },
+      {
+        "block": "minecraft:basalt",
+        "weight": 5
+      },
+      {
+        "block": "minecraft:basalt",
+        "weight": 3
+      },
+      {
+        "block": "minecraft:basalt",
+        "weight": 1
+      }
+    ]
+  },
+  "layers": [
+    {
+      "minHeight": 1,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:basalt",
+          "weight": 4
+        },
+        {
+          "block": "minecraft:blackstone",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:basalt",
+          "weight": 7
+        },
+        {
+          "block": "minecraft:blackstone",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "minHeight": 1,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:basalt",
+          "weight": 7
+        },
+        {
+          "block": "minecraft:basalt",
+          "weight": 4
+        },
+        {
+          "block": "minecraft:basalt",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:basalt",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "color": "#6B8285",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_rocky_cavebiome_child_e1fb59a0",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#11191B",
+      "fogColor": "#1B4745",
+      "waterColor": "#5E9192",
+      "waterFogColor": "#23373C",
+      "grassColor": "#617476",
+      "foliageColor": "#677B7F",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

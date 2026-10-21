@@ -1,0 +1,131 @@
+{
+  "proceduralObjects": "snippet/procedural-objects/frozen/magical-soul-cave",
+  "name": "Underworld Ice Cavern Child",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:soul_soil"
+      }
+    ]
+  },
+  "layers": [
+    "snippet/biome-palette/soul/soul-soil-1-1-z0-4-w5",
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "zoom": 0.4,
+      "palette": [
+        {
+          "weight": 1,
+          "block": "minecraft:soul_soil"
+        },
+        {
+          "weight": 5,
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "weight": 5,
+          "block": "minecraft:blackstone"
+        }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.001,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.0015,
+      "scaleStack": true,
+      "stackMin": 25,
+      "stackMax": 50,
+      "absoluteMaxStack": 3,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:soul_soil",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "partOf": "CEILING",
+      "chance": 0.005,
+      "absoluteMaxStack": 3,
+      "scaleStack": true,
+      "stackMin": 25,
+      "stackMax": 50,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:soul_soil",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "maxHeight": 2,
+      "minHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/ceiling-blackstone-soul-soil-1-1"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/rock-boulder-carve-c0-0972-x0-375"
+  ],
+  "caveProfile": "snippet/cave-profile/caverns/ice-fbm-y620",
+  "caveMinDepthBelowSurface": 10,
+  "children": [
+    "carving/ice-lite-child"
+  ],
+  "childStyle": {
+    "style": "CELLULAR_IRIS_DOUBLE",
+    "zoom": 0.9
+  },
+  "childShrinkFactor": 1.54,
+  "color": "#607176",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_ice_lite_47dbca6a",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#141C20",
+      "fogColor": "#1B4745",
+      "waterColor": "#63989E",
+      "waterFogColor": "#244245",
+      "grassColor": "#617274",
+      "foliageColor": "#677A7E",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

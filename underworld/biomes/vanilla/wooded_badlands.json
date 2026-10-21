@@ -1,0 +1,206 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Wooded Badlands",
+  "color": "#655C59",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "generators": [
+    {
+      "min": 20,
+      "max": 75,
+      "generator": "mountain"
+    }
+  ],
+  "layers": [
+    "snippet/biome-palette/soil/netherrack-1-1-slope2-10",
+    {
+      "slopeCondition": {
+        "minimumSlope": 0,
+        "maximumSlope": 2
+      },
+      "style": {
+        "style": "NOWHERE",
+        "fracture": {
+          "style": "STATIC",
+          "multiplier": 4,
+          "axialFracturing": true
+        },
+        "zoom": 1.4
+      },
+      "zoom": 0.9,
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "weight": 3,
+          "block": "minecraft:blackstone"
+        },
+        {
+          "weight": 2,
+          "block": "minecraft:magma_block"
+        },
+        {
+          "weight": 7,
+          "block": "minecraft:basalt"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:quartz_bricks"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/netherrack-quartz-bricks-1-1",
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:magma_block"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/netherrack-quartz-bricks-1-1",
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:quartz_bricks"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/basalt/acacia-vexed-c0-4",
+    {
+      "chance": 0.00175,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/basalt/clutter/camp1"
+      ]
+    },
+    {
+      "mode": "PAINT",
+      "chance": 0.005,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/basalt/clutter/bincluster1"
+      ]
+    },
+    "snippet/object-placer/basalt/savannad-c0-07",
+    "snippet/object-placer/basalt/savannaf-c0-2",
+    "snippet/object-placer/basalt/savannas-c0-04"
+  ],
+  "decorators": [
+    "snippet/decorator/shared/fire-fungus-sprouts-c0-136",
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/dry-grass",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_vanilla_wooded_badlands_29c5759d",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#171313",
+      "fogColor": "#685F70",
+      "waterColor": "#BF3814",
+      "waterFogColor": "#502014",
+      "grassColor": "#665754",
+      "foliageColor": "#766C66",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30119,
+    "amplitude": 38,
+    "horizontalScale": 176,
+    "verticalScale": 44,
+    "densityStyle": {
+      "style": "NOWHERE"
+    },
+    "crackDepth": 4,
+    "crackWidth": 2,
+    "crackScale": 392,
+    "crackStyle": {
+      "style": "PERLIN"
+    },
+    "minimumSlope": 0.28,
+    "slopeFade": 0.4,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

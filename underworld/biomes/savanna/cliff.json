@@ -1,0 +1,166 @@
+{
+  "entitySpawners": [
+    "nether/surface/nether-wastes",
+    "nether/cave"
+  ],
+  "name": "Underworld Savanna Cliffs",
+  "color": "#963A19",
+  "rarity": 1,
+  "derivative": "minecraft:nether_wastes",
+  "vanillaDerivative": "minecraft:nether_wastes",
+  "customDerivitives": [
+    {
+      "id": "underworld_savanna_cliff_ae3850ff",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#310509",
+      "fogColor": "#330808",
+      "waterColor": "#EB6306",
+      "waterFogColor": "#661106",
+      "grassColor": "#793A1E",
+      "foliageColor": "#813F2B",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "children": [
+    "savanna/acacia-denmyre",
+    "savanna/cliff-extended"
+  ],
+  "generators": [
+    {
+      "min": 35,
+      "max": 65,
+      "generator": "plain-cliffs"
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    {
+      "minHeight": 3,
+      "maxHeight": 5,
+      "slopeCondition": {
+        "minimumSlope": 6.9
+      },
+      "palette": [
+        {
+          "block": "minecraft:smooth_basalt"
+        },
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "minHeight": 3,
+      "maxHeight": 5,
+      "slopeCondition": {
+        "minimumSlope": 4.6
+      },
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        },
+        {
+          "block": "minecraft:netherrack"
+        },
+        {
+          "block": "minecraft:gravel"
+        }
+      ]
+    },
+    {
+      "zoom": 0.75,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 4,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/wastes/savannad-c0-07",
+    "snippet/object-placer/wastes/savannaf-c0-2",
+    "snippet/object-placer/wastes/savannas-c0-04",
+    "snippet/object-placer/wastes/savrock-c0-1"
+  ],
+  "decorators": [
+    {
+      "chance": 0.001,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.0005,
+      "stackMax": 2,
+      "palette": [
+        {
+          "block": "minecraft:crimson_stem"
+        }
+      ],
+      "stackMin": 1
+    },
+    "snippet/decorator/wastes/crimson-stem-fungus-c0-0005",
+    {
+      "chance": 0.09,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.01,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/shared/dry-grass",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30113,
+    "amplitude": 38,
+    "horizontalScale": 160,
+    "verticalScale": 48,
+    "densityStyle": {
+      "style": "NOWHERE"
+    },
+    "crackDepth": 3,
+    "crackWidth": 2.25,
+    "crackScale": 336,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.3,
+    "slopeFade": 0.4,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "entitySpawners": [
+    "nether/surface/nether-wastes",
+    "nether/cave"
+  ],
+  "name": "Underworld Jagged Peaks",
+  "color": "#9C3D19",
+  "rarity": 12,
+  "derivative": "minecraft:nether_wastes",
+  "vanillaDerivative": "minecraft:nether_wastes",
+  "generators": [
+    {
+      "min": 23,
+      "max": 220,
+      "generator": "spikes"
+    }
+  ],
+  "wall": "snippet/biome-palette/soil/netherrack-1-1-slope2-6-iris",
+  "layers": [
+    "snippet/biome-palette/soil/netherrack-1-1-slope2-6-iris"
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_vanilla_jagged_peaks_f101a2c2",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#2D0A0A",
+      "fogColor": "#330808",
+      "waterColor": "#D15018",
+      "waterFogColor": "#70270F",
+      "grassColor": "#844420",
+      "foliageColor": "#843D27",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30109,
+    "amplitude": 42,
+    "horizontalScale": 136,
+    "verticalScale": 56,
+    "densityStyle": {
+      "style": "IRIS_HALF"
+    },
+    "crackDepth": 4,
+    "crackWidth": 2.25,
+    "crackScale": 416,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.22,
+    "slopeFade": 0.36,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

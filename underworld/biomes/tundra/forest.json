@@ -1,0 +1,149 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Tundra Forest",
+  "color": "#64777C",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_tundra_forest_bd598b3e",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#10171B",
+      "fogColor": "#1B4745",
+      "waterColor": "#64959B",
+      "waterFogColor": "#233B42",
+      "grassColor": "#718289",
+      "foliageColor": "#7E9396",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "children": [
+    "tundra/forest-extended-cliffs"
+  ],
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "min": 37,
+      "max": 56
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/soul/wall-basalt",
+  "layers": [
+    "snippet/biome-palette/soul/basalt-soul-sand-3-5-steep6-9",
+    "snippet/biome-palette/soul/soul-soil-soul-sand-3-5-steep5-3",
+    {
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/gravelsplotch-paint-c0-75",
+    {
+      "chance": 0.8,
+      "density": 1,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/soul/trees/spruce/levergreen1",
+        "underworld/soul/trees/spruce/levergreen2",
+        "underworld/soul/trees/spruce/levergreen1",
+        "underworld/soul/trees/spruce/levergreen2",
+        "underworld/soul/trees/spruce/levergreen1",
+        "underworld/soul/trees/spruce/levergreen2",
+        "underworld/soul/trees/spruce/levergreen3",
+        "underworld/soul/trees/spruce/levergreen4",
+        "underworld/soul/trees/spruce/levergreen5",
+        "underworld/soul/trees/spruce/levergreen6",
+        "underworld/soul/trees/spruce/mevergreen1",
+        "underworld/soul/trees/spruce/mevergreen2",
+        "underworld/soul/trees/spruce/mevergreen3"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "chance": 0.01,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/soul/clutter/obelisk1",
+        "underworld/soul/clutter/obelisk2",
+        "underworld/soul/clutter/obelisk3",
+        "underworld/soul/clutter/obelisk4",
+        "underworld/soul/clutter/obelisk5",
+        "underworld/soul/clutter/obelisk6",
+        "underworld/soul/clutter/obelisk7"
+      ]
+    },
+    {
+      "chance": 0.35,
+      "place": [
+        "underworld/soul/trees/spruce/pine1",
+        "underworld/soul/trees/spruce/pine2",
+        "underworld/soul/trees/spruce/pine3",
+        "underworld/soul/trees/spruce/pine4",
+        "underworld/soul/trees/spruce/pine5",
+        "underworld/soul/trees/spruce/pine6",
+        "underworld/soul/trees/spruce/pine7",
+        "underworld/soul/trees/spruce/pine8",
+        "underworld/soul/trees/spruce/pine9",
+        "underworld/soul/trees/spruce/pine10",
+        "underworld/soul/trees/spruce/pine11",
+        "underworld/soul/trees/spruce/pine12"
+      ]
+    },
+    "snippet/object-placer/soul/pumpkins-paint-c0-008"
+  ],
+  "decorators": [
+    "snippet/decorator/soul/soul-fire-roots-c0-0077",
+    "snippet/decorator/soul/soul-fire-c0-0003",
+    {
+      "chance": 0.06,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    "snippet/decorator/soul/leaf-litter",
+    "snippet/decorator/soul/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "childShrinkFactor": 2.4,
+  "terrain3D": "snippet/terrain-3d/hills/amp22-perlin-crack416"
+}

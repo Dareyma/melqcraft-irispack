@@ -1,0 +1,200 @@
+{
+  "entitySpawners": [
+    "nether/surface/warped-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld The Creaks",
+  "color": "#29A48F",
+  "rarity": 15,
+  "derivative": "minecraft:warped_forest",
+  "vanillaDerivative": "minecraft:warped_forest",
+  "customDerivitives": [
+    {
+      "id": "underworld_swamp_creaks_f436feb9",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#082223",
+      "fogColor": "#1A051A",
+      "waterColor": "#27A996",
+      "waterFogColor": "#065958",
+      "grassColor": "#229083",
+      "foliageColor": "#1F7C77",
+      "ambientParticle": {
+        "particle": "minecraft:warped_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "min": 18,
+      "max": 24,
+      "generator": "plain"
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    {
+      "zoom": 0.5,
+      "palette": [
+        {
+          "weight": 5,
+          "block": "minecraft:warped_nylium"
+        },
+        {
+          "weight": 2,
+          "block": "minecraft:warped_wart_block"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 4,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        },
+        {
+          "block": "minecraft:warped_wart_block"
+        }
+      ]
+    },
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    {
+      "chance": 1,
+      "edit": [
+        {
+          "find": [
+            {
+              "block": "minecraft:warped_hyphae"
+            },
+            {
+              "block": "minecraft:warped_hyphae"
+            },
+            {
+              "block": "minecraft:stripped_warped_hyphae"
+            }
+          ],
+          "replace": {
+            "palette": [
+              {
+                "block": "minecraft:warped_hyphae",
+                "weight": 150
+              },
+              {
+                "block": "minecraft:crying_obsidian",
+                "weight": 1
+              }
+            ]
+          }
+        },
+        "snippet/object-block-replacer/shared/warped-wart-to-warped-wart",
+        "snippet/object-block-replacer/shared/warped-wart-to-warped-wart",
+        "snippet/object-block-replacer/warped/warped-fence-to-warped-wart"
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/warped/trees/oak/troofed1",
+        "underworld/warped/trees/oak/troofed2",
+        "underworld/warped/trees/oak/troofed3",
+        "underworld/warped/trees/oak/troofed4",
+        "underworld/warped/trees/oak/troofed5",
+        "underworld/warped/trees/oak/troofed6",
+        "underworld/warped/trees/oak/troofed7",
+        "underworld/warped/trees/oak/troofed8",
+        "underworld/warped/trees/oak/troofed9",
+        "underworld/warped/trees/oak/troofed10"
+      ]
+    },
+    "snippet/object-placer/warped/mroofed-c0-5",
+    "snippet/object-placer/warped/mushroom-mix-c0-02",
+    "snippet/object-placer/warped/mushroom-mix-c0-07",
+    "snippet/object-placer/warped/boulder-c0-135",
+    "snippet/object-placer/warped/stump-paint-c0-1",
+    "snippet/object-placer/warped/oakclutt-c0-3",
+    "snippet/object-placer/warped/genericgrave-c0-001"
+  ],
+  "decorators": [
+    {
+      "chance": 0.03,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:warped_fungus",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:nether_sprouts",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:warped_roots",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_fungus",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_fungus",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "chance": 0.2,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    {
+      "chance": 0.0002,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.03,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:warped_wart_block",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:warped_wart_block",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "chance": 0.45,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/rolling/amp10-perlin-crack392"
+}

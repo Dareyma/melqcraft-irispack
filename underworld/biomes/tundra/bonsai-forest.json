@@ -1,0 +1,110 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Tundra Bonsai Forest",
+  "color": "#758A8E",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_tundra_bonsai_forest_8901a8a5",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#10161B",
+      "fogColor": "#1B4745",
+      "waterColor": "#639F9F",
+      "waterFogColor": "#23383F",
+      "grassColor": "#6A7D7F",
+      "foliageColor": "#748D8F",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "children": [
+    "tundra/bonsai-extended",
+    "tundra/sequia-redwoods",
+    "tundra/redwood-extended-cliffs"
+  ],
+  "generators": [
+    {
+      "min": 48,
+      "max": 86,
+      "generator": "plain"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:soul_soil"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/soul-soil-2-4",
+    "snippet/biome-palette/soul/basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/camp-c0-00375",
+    "snippet/object-placer/soul/bonsai-med-c0-8",
+    "snippet/object-placer/soul/stoneclutt-c0-32",
+    "snippet/object-placer/soul/tredwoodsmol-c0-75",
+    "snippet/object-placer/soul/spruceclutt-c0-35",
+    "snippet/object-placer/soul/tredwoodbee-c0-01",
+    "snippet/object-placer/soul/boulder-c0-035",
+    "snippet/object-placer/soul/stump-paint-c0-075"
+  ],
+  "decorators": [
+    "snippet/decorator/soul/blackstone-buttons-c0-003-z1",
+    "snippet/decorator/soul/soul-fire-roots-c0-001425-z1",
+    "snippet/decorator/soul/soul-fire-c0-0003",
+    {
+      "chance": 0.000435,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.003,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    {
+      "chance": 0.005,
+      "palette": [
+        {
+          "block": "minecraft:crimson_roots"
+        }
+      ]
+    },
+    "snippet/decorator/soul/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/mountains/amp30-perlin-crack448"
+}

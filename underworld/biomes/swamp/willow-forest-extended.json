@@ -1,0 +1,104 @@
+{
+  "entitySpawners": [
+    "nether/surface/warped-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld Swamp Willow Forest",
+  "color": "#1D887F",
+  "rarity": 1,
+  "derivative": "minecraft:warped_forest",
+  "vanillaDerivative": "minecraft:warped_forest",
+  "generators": [
+    {
+      "min": 34,
+      "max": 51,
+      "generator": "mountain"
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    "snippet/biome-palette/warped/nylium",
+    "snippet/biome-palette/warped/netherrack-2-4",
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/warped/darkoak-c0-7",
+    "snippet/object-placer/warped/willow-paint-c0-2",
+    "snippet/object-placer/warped/boulder-c0-135",
+    "snippet/object-placer/warped/oakclutt-c0-17",
+    "snippet/object-placer/warped/stump-paint-c0-08",
+    "snippet/object-placer/warped/genericgrave-c0-00005"
+  ],
+  "decorators": [
+    {
+      "chance": 0.01,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:warped_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/warped/warped-crimson-fungus-c0-0002",
+    {
+      "chance": 0.45,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "effects": [
+    {
+      "interval": 55656,
+      "sound": "AMBIENT.WARPED_FOREST.ADDITIONS",
+      "soundDistance": 3,
+      "volume": 6.2,
+      "minPitch": 1.6,
+      "maxPitch": 1.35,
+      "chance": 11
+    },
+    {
+      "interval": 56565,
+      "sound": "AMBIENT.WARPED_FOREST.ADDITIONS",
+      "soundDistance": 3,
+      "volume": 6.2,
+      "minPitch": 0.4,
+      "maxPitch": 0.2,
+      "chance": 5
+    },
+    {
+      "particleAltX": 0.0101,
+      "particleAltY": -0.033885,
+      "particleAltZ": 0.0101,
+      "chance": 1,
+      "particleEffect": "WARPED_SPORE",
+      "particleOffset": 12,
+      "interval": 640,
+      "particleCount": 0
+    }
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_swamp_willow_forest_extended_129e63b4",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#041B20",
+      "fogColor": "#1A051A",
+      "waterColor": "#31A79D",
+      "waterFogColor": "#0D5455",
+      "grassColor": "#1E8078",
+      "foliageColor": "#278B88",
+      "ambientParticle": {
+        "particle": "minecraft:warped_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp18-nowhere-crack416"
+}

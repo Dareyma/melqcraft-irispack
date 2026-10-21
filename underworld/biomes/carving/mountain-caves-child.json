@@ -1,0 +1,116 @@
+{
+  "name": "Underworld M cave Child",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:basalt",
+        "weight": 3
+      },
+      {
+        "block": "minecraft:blackstone",
+        "weight": 12
+      },
+      {
+        "block": "minecraft:basalt",
+        "weight": 13
+      },
+      {
+        "block": "minecraft:basalt",
+        "weight": 3
+      }
+    ]
+  },
+  "layers": [
+    {
+      "maxHeight": 2,
+      "minHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:basalt",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:basalt",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:basalt",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "maxHeight": 2,
+      "minHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:basalt",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:basalt",
+          "weight": 4
+        },
+        {
+          "block": "minecraft:basalt",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/soul/stoneclutt-carve-c0-21-d6",
+    "snippet/object-placer/soul/rock-rubble-carve-c0-2145",
+    {
+      "chance": 0.13122,
+      "density": 6,
+      "carvingSupport": "CARVING_ONLY",
+      "caveAnchorMode": "PROFILE_DEFAULT",
+      "translate": {
+        "y": -1
+      },
+      "place": [
+        "underworld/soul/clutter/stoneclutt3",
+        "underworld/soul/clutter/stoneclutt4",
+        "underworld/soul/clutter/stoneclutt5",
+        "underworld/soul/clutter/rock1",
+        "underworld/soul/clutter/rock2",
+        "underworld/soul/clutter/rock3",
+        "underworld/soul/clutter/boulder7",
+        "underworld/soul/clutter/boulder8",
+        "underworld/soul/clutter/boulder9"
+      ],
+      "bottom": true,
+      "force": true,
+      "scale": {
+        "size": 0.75
+      }
+    }
+  ],
+  "caveProfile": "snippet/cave-profile/ravines/drip-high-warp-y700",
+  "caveMinDepthBelowSurface": 10,
+  "color": "#778E92",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_mountain_caves_child_58f6f4af",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#11181C",
+      "fogColor": "#1B4745",
+      "waterColor": "#689CA2",
+      "waterFogColor": "#284143",
+      "grassColor": "#617579",
+      "foliageColor": "#71878A",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

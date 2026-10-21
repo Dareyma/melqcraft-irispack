@@ -1,0 +1,85 @@
+{
+  "proceduralObjects": "snippet/procedural-objects/frozen/magical-soul-spikes-biome",
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Ice Spikes",
+  "color": "#6F848A",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_frozen_ice_spikes_bb184866",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#111A1D",
+      "fogColor": "#1B4745",
+      "waterColor": "#547881",
+      "waterFogColor": "#20383C",
+      "grassColor": "#6B7F81",
+      "foliageColor": "#6A7D82",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "generator": "mountain",
+      "max": 43,
+      "min": 15
+    },
+    {
+      "generator": "highplains",
+      "max": 50,
+      "min": 40
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:basalt"
+      },
+      {
+        "block": "minecraft:basalt"
+      },
+      {
+        "block": "minecraft:soul_sand"
+      }
+    ]
+  },
+  "layers": [
+    "snippet/biome-palette/soul/soul-soil-1-1-slope3-3",
+    "snippet/biome-palette/soul/soul-soil-3-3-slope3",
+    "snippet/biome-palette/soul/soul-soil-basalt-3-3-slope3"
+  ],
+  "objects": [],
+  "decorators": [
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30133,
+    "amplitude": 28,
+    "horizontalScale": 112,
+    "verticalScale": 48,
+    "densityStyle": {
+      "style": "SIMPLEX"
+    },
+    "crackDepth": 2,
+    "crackWidth": 2.25,
+    "crackScale": 416,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.32,
+    "slopeFade": 0.42,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

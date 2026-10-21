@@ -1,0 +1,117 @@
+{
+  "proceduralObjects": "snippet/procedural-objects/frozen/magical-soul-surface",
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Frozen Pines",
+  "color": "#748B92",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_frozen_pines_11ba5ddb",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#121A20",
+      "fogColor": "#1B4745",
+      "waterColor": "#608C96",
+      "waterFogColor": "#263D40",
+      "grassColor": "#728589",
+      "foliageColor": "#647679",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "min": 10,
+      "max": 25,
+      "generator": "mountain"
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/soul/wall-basalt",
+  "layers": [
+    {
+      "minHeight": 0,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    {
+      "minHeight": 6,
+      "maxHeight": 18,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 4,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/basalt-6-18"
+  ],
+  "objects": [
+    {
+      "chance": 0.5,
+      "density": 1,
+      "edit": [
+        "snippet/object-block-replacer/soul/warped-wart-to-warped-wart-perlin"
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/soul/trees/spruce/levergreen1",
+        "underworld/soul/trees/spruce/levergreen1",
+        "underworld/soul/trees/spruce/mevergreen1",
+        "underworld/soul/trees/spruce/mevergreen2",
+        "underworld/soul/trees/spruce/mevergreen3"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -2,
+        "z": 0
+      }
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/soul/soul-soil-air-c1",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "childShrinkFactor": 20,
+  "terrain3D": "snippet/terrain-3d/hills/amp18-simplex-crack416"
+}

@@ -1,0 +1,103 @@
+{
+  "entitySpawners": [
+    "nether/surface/nether-wastes",
+    "nether/cave"
+  ],
+  "name": "Underworld Overflowed",
+  "color": "#893426",
+  "rarity": 2,
+  "derivative": "minecraft:nether_wastes",
+  "vanillaDerivative": "minecraft:nether_wastes",
+  "generators": [
+    {
+      "min": -10,
+      "max": -5,
+      "generator": "mountain"
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:netherrack"
+      },
+      {
+        "block": "minecraft:basalt"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/netherrack-1-3",
+    "snippet/biome-palette/wastes/netherrack-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/wastes/camp-1345-paint-c0-00975",
+    "snippet/object-placer/wastes/camp-2-paint-c0-00675",
+    "snippet/object-placer/wastes/oak-mix-c0-01",
+    "snippet/object-placer/wastes/obelisk-c0-005",
+    "snippet/object-placer/wastes/genericpeak-paint-c0-002",
+    "snippet/object-placer/wastes/oak-c0-07",
+    "snippet/object-placer/wastes/pumpkins-statue-paint-c0-008"
+  ],
+  "decorators": [
+    "snippet/decorator/wastes/fungus-sprouts-fire-c0-0026",
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_temperate_overflowed_b5fbdd39",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#280B09",
+      "fogColor": "#330808",
+      "waterColor": "#D85624",
+      "waterFogColor": "#6D210C",
+      "grassColor": "#884828",
+      "foliageColor": "#914B2E",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": {
+    "enabled": false
+  }
+}

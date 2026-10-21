@@ -1,0 +1,138 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Mountain Forest",
+  "color": "#5D5550",
+  "rarity": 1,
+  "children": [
+    "frozen/fields/mountain-spruce-frosty"
+  ],
+  "childStyle": {
+    "style": "SIMPLEX_CELLS",
+    "zoom": 0.3
+  },
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "customDerivitives": [
+    {
+      "id": "underworld_frozen_fields_mountain_spruce_winter_709741ec",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#151212",
+      "fogColor": "#685F70",
+      "waterColor": "#BA4A20",
+      "waterFogColor": "#541E0F",
+      "grassColor": "#5D514E",
+      "foliageColor": "#675E5A",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "max": 30,
+      "min": 20
+    },
+    {
+      "generator": "mountain",
+      "max": 5,
+      "min": 1
+    }
+  ],
+  "wall": "snippet/biome-palette/basalt/wall-blackstone-basalt-gravel-nylium",
+  "layers": [
+    "snippet/biome-palette/basalt/basalt-blackstone-1-1-slope3-3",
+    "snippet/biome-palette/basalt/blackstone-3-3-slope3",
+    "snippet/biome-palette/basalt/blackstone-3-3-slope3-x2"
+  ],
+  "objects": [
+    "snippet/object-placer/basalt/camp-paint-c0-005",
+    "snippet/object-placer/basalt/sbush-paint-c0-1",
+    "snippet/object-placer/basalt/sbush-paint-c0-1",
+    "snippet/object-placer/basalt/sbush-paint-c0-1",
+    "snippet/object-placer/basalt/spruce-c1"
+  ],
+  "decorators": [
+    "snippet/decorator/basalt/fire-sprouts-c0-001425-z1",
+    "snippet/decorator/basalt/fire-ages-c0-003",
+    {
+      "chance": 0.25,
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:polished_blackstone_button",
+          "data": {
+            "face": "floor"
+          }
+        }
+      ]
+    },
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:polished_blackstone_button",
+          "data": {
+            "face": "floor"
+          }
+        }
+      ]
+    },
+    {
+      "chance": 0.06,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.075,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.018,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.1,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.05,
+      "palette": [
+        {
+          "block": "minecraft:blackstone_slab"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp18-simplex-crack416"
+}

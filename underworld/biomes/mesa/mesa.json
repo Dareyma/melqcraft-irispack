@@ -1,0 +1,194 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Mesa",
+  "color": "#645A57",
+  "rarity": 2,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "children": [
+    "mesa/valleys",
+    "mesa/dark",
+    "mesa/red",
+    "mesa/blue",
+    "mesa/dark",
+    "mesa/green",
+    "mesa/red",
+    "mesa/yellow",
+    "mesa/blue"
+  ],
+  "generators": [
+    {
+      "min": 50,
+      "max": 70,
+      "generator": "highplains"
+    },
+    {
+      "min": 95,
+      "max": 190,
+      "generator": "highplains"
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "layers": [
+    {
+      "style": {
+        "style": "NOWHERE"
+      },
+      "zoom": 0.6,
+      "minHeight": 2,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "weight": 1,
+          "block": "minecraft:blackstone"
+        },
+        {
+          "weight": 1,
+          "block": "minecraft:quartz_bricks"
+        },
+        {
+          "weight": 1,
+          "block": "minecraft:basalt"
+        },
+        {
+          "weight": 1,
+          "block": "minecraft:blackstone"
+        },
+        {
+          "weight": 1,
+          "block": "minecraft:quartz_bricks"
+        },
+        {
+          "weight": 6,
+          "block": "minecraft:magma_block"
+        },
+        {
+          "weight": 4,
+          "block": "minecraft:netherrack"
+        },
+        {
+          "weight": 4,
+          "block": "minecraft:quartz_bricks"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "block": "minecraft:quartz_bricks"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "weight": 1,
+          "block": "minecraft:netherrack"
+        },
+        {
+          "weight": 1,
+          "block": "minecraft:quartz_bricks"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "block": "minecraft:magma_block"
+        }
+      ]
+    },
+    {
+      "minHeight": 3,
+      "maxHeight": 4,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "weight": 1,
+          "block": "minecraft:netherrack"
+        },
+        {
+          "weight": 1,
+          "block": "minecraft:quartz_bricks"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:quartz_bricks"
+        }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/shared/blackstone-buttons-c0-009",
+    "snippet/decorator/shared/dry-grass",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "childStyle": {
+    "style": "NOWHERE_CELLULAR",
+    "zoom": 1.2,
+    "exponent": 1.3
+  },
+  "childShrinkFactor": 1,
+  "customDerivitives": [
+    {
+      "id": "underworld_mesa_mesa_d10b8dba",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#171313",
+      "fogColor": "#685F70",
+      "waterColor": "#AF531D",
+      "waterFogColor": "#4A1A14",
+      "grassColor": "#645653",
+      "foliageColor": "#655D58",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": "snippet/terrain-3d/mountains/amp38-perlin-crack392"
+}

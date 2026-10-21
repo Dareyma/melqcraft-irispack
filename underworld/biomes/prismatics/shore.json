@@ -1,0 +1,259 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Prismatics Shore",
+  "color": "#5E5652",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "generators": [
+    {
+      "min": -3,
+      "max": 4,
+      "generator": "plain"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:quartz_block",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:magma_block",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:nether_wart_block",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:warped_wart_block",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:glowstone",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:warped_nylium",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:crimson_nylium",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:polished_blackstone",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:quartz_bricks",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:warped_nylium",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:crying_obsidian",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:warped_wart_block",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:soul_soil",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:warped_nylium",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:nether_bricks",
+        "weight": 1
+      },
+      {
+        "block": "minecraft:blackstone",
+        "weight": 1
+      }
+    ]
+  },
+  "layers": [
+    {
+      "minHeight": 3,
+      "maxHeight": 5,
+      "style": {
+        "style": "CELLULAR_BILINEAR",
+        "zoom": 0.95
+      },
+      "palette": [
+        {
+          "block": "minecraft:quartz_block",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:magma_block",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:nether_wart_block",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_wart_block",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:glowstone",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_nylium",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:crimson_nylium",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:polished_blackstone",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:quartz_bricks",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_nylium",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:crying_obsidian",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_wart_block",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:soul_soil",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_nylium",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:nether_bricks",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:blackstone",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 6,
+      "style": {
+        "style": "SIMPLEX",
+        "zoom": 0.8
+      },
+      "palette": [
+        {
+          "block": "minecraft:quartz_block",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:magma_block",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:nether_wart_block",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_wart_block",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:glowstone",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_nylium",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:crimson_nylium",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:polished_blackstone",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:quartz_bricks",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_nylium",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:crying_obsidian",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_wart_block",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:soul_soil",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:warped_nylium",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:nether_bricks",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:blackstone",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "lockLayers": true,
+  "customDerivitives": [
+    {
+      "id": "underworld_prismatics_shore_af571b00",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#161312",
+      "fogColor": "#685F70",
+      "waterColor": "#C25B2C",
+      "waterFogColor": "#4A1E17",
+      "grassColor": "#5E524F",
+      "foliageColor": "#5E5451",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/shared/surface-quartz"
+  ]
+}

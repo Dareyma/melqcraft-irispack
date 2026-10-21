@@ -1,0 +1,91 @@
+{
+  "entitySpawners": [
+    "nether/surface/warped-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld Swamp Roofed Wayward",
+  "color": "#2A9C89",
+  "rarity": 1,
+  "derivative": "minecraft:warped_forest",
+  "vanillaDerivative": "minecraft:warped_forest",
+  "children": [
+    "swamp/sea/lake"
+  ],
+  "generators": [
+    {
+      "min": 50,
+      "max": 71,
+      "generator": "mountain"
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    {
+      "zoom": 0.5,
+      "palette": [
+        {
+          "weight": 5,
+          "block": "minecraft:warped_nylium"
+        },
+        {
+          "weight": 2,
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/warped/netherrack-2-4",
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    "snippet/object-placer/warped/troofed-c0-5",
+    "snippet/object-placer/warped/mroofed-c0-5",
+    "snippet/object-placer/warped/mushroom-mix-c0-02",
+    "snippet/object-placer/warped/mushroom-mix-c0-07",
+    "snippet/object-placer/warped/boulder-c0-135",
+    "snippet/object-placer/warped/stump-paint-c0-1",
+    "snippet/object-placer/warped/oakclutt-c0-3",
+    "snippet/object-placer/warped/genericgrave-c0-001"
+  ],
+  "decorators": [
+    "snippet/decorator/warped/warped-fungus-c0-03",
+    {
+      "chance": 0.0002,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.45,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_swamp_roofed_wayward_extended_52962486",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#051E1F",
+      "fogColor": "#1A051A",
+      "waterColor": "#27A28F",
+      "waterFogColor": "#075A55",
+      "grassColor": "#279284",
+      "foliageColor": "#257263",
+      "ambientParticle": {
+        "particle": "minecraft:warped_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp24-nowhere-crack448"
+}

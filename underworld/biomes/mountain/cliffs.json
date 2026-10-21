@@ -1,0 +1,83 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Mountain Cliffs",
+  "color": "#635956",
+  "rarity": 3,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "children": [
+    "mountain/cliffs-extended"
+  ],
+  "generators": [
+    {
+      "min": 26,
+      "max": 90,
+      "generator": "cracked-cliffs"
+    }
+  ],
+  "wall": "snippet/biome-palette/basalt/wall-blackstone-basalt-gravel-nylium",
+  "layers": [
+    "snippet/biome-palette/basalt/basalt-1-1-slope2-6",
+    {
+      "minHeight": 1,
+      "maxHeight": 2,
+      "slopeCondition": {
+        "minimumSlope": 3.95
+      },
+      "palette": [
+        {
+          "block": "minecraft:gravel"
+        },
+        {
+          "block": "minecraft:warped_nylium"
+        }
+      ]
+    },
+    "snippet/biome-palette/stone/blackstone-basalt-6-18"
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_mountain_cliffs_cf669059",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#151211",
+      "fogColor": "#685F70",
+      "waterColor": "#B33D1E",
+      "waterFogColor": "#5C1D18",
+      "grassColor": "#514643",
+      "foliageColor": "#746965",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30113,
+    "amplitude": 42,
+    "horizontalScale": 144,
+    "verticalScale": 48,
+    "densityStyle": {
+      "style": "IRIS_HALF"
+    },
+    "crackDepth": 4,
+    "crackWidth": 2.25,
+    "crackScale": 336,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.2,
+    "slopeFade": 0.34,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

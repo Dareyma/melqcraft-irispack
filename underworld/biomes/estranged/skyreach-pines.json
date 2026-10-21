@@ -1,0 +1,188 @@
+{
+  "entitySpawners": [
+    "nether/surface/warped-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld Skyreach Pines",
+  "color": "#2E8A80",
+  "rarity": 2,
+  "derivative": "minecraft:warped_forest",
+  "vanillaDerivative": "minecraft:warped_forest",
+  "customDerivitives": [
+    {
+      "id": "underworld_estranged_skyreach_pines_264336e5",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#071C21",
+      "fogColor": "#1A051A",
+      "waterColor": "#22A19A",
+      "waterFogColor": "#034C4D",
+      "grassColor": "#238B88",
+      "foliageColor": "#238680",
+      "ambientParticle": {
+        "particle": "minecraft:warped_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "generator": "highplains",
+      "max": 38,
+      "min": 18
+    },
+    {
+      "generator": "rare-hills",
+      "max": 60,
+      "min": 0
+    }
+  ],
+  "wall": "snippet/biome-palette/warped/wall-netherrack-basalt-blackstone",
+  "layers": [
+    {
+      "palette": [
+        {
+          "weight": 16,
+          "block": "minecraft:warped_nylium"
+        },
+        {
+          "block": "minecraft:warped_nylium"
+        },
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:netherrack"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/netherrack-1-3"
+  ],
+  "proceduralObjects": {
+    "trees": [
+      {
+        "name": "skyreach-pine",
+        "chance": 0.6,
+        "density": 2,
+        "variants": 6,
+        "seed": 8401,
+        "trunk": "minecraft:warped_hyphae",
+        "trunkPalette": {
+          "style": {
+            "style": "CELLULAR",
+            "zoom": 0.4
+          },
+          "zoom": 2,
+          "palette": [
+            {
+              "block": "minecraft:warped_hyphae",
+              "weight": 6
+            },
+            {
+              "block": "minecraft:warped_hyphae",
+              "weight": 1
+            }
+          ]
+        },
+        "leaves": "minecraft:warped_wart_block",
+        "profile": "MEGA_SPRUCE",
+        "heightMin": 22,
+        "heightMax": 34,
+        "trunkWidth": 2,
+        "roots": true,
+        "rootStyle": "TAPROOT",
+        "rootDepth": 3,
+        "rootFlare": 1.5,
+        "rotation": {
+          "enabled": true,
+          "yAxis": {
+            "enabled": true,
+            "min": 0,
+            "max": 360,
+            "interval": 90
+          }
+        },
+        "canopy": {
+          "mode": "DENSITY",
+          "leafDensity": 0.85,
+          "branches": {
+            "probabilityFunction": "PERIODIC",
+            "probabilityConstant": 0.95,
+            "probabilityPeriods": 8,
+            "lengthFunction": "LINEAR",
+            "lengthBase": 2,
+            "lengthCrown": 6,
+            "azimuthMode": "WHORL",
+            "elevation": -6,
+            "sag": 0.25,
+            "clusterRadius": 2,
+            "clusterMode": "DENSITY",
+            "clusterDensity": 0.8
+          }
+        },
+        "azimuthWhorlCount": 5,
+        "decorators": [
+          {
+            "target": "CANOPY_TOP",
+            "block": "minecraft:netherrack",
+            "chance": 0.4
+          }
+        ]
+      }
+    ]
+  },
+  "decorators": [
+    {
+      "chance": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:nether_sprouts",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "chance": 0.05,
+      "palette": [
+        {
+          "block": "minecraft:warped_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/warped/leaf-litter",
+    "snippet/decorator/warped/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30169,
+    "amplitude": 32,
+    "horizontalScale": 144,
+    "verticalScale": 48,
+    "densityStyle": {
+      "style": "IRIS_HALF"
+    },
+    "crackDepth": 3,
+    "crackWidth": 2.25,
+    "crackScale": 392,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.2,
+    "slopeFade": 0.34,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

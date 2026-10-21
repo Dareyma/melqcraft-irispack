@@ -1,0 +1,138 @@
+{
+  "entitySpawners": [
+    "nether/surface/warped-forest",
+    "nether/cave"
+  ],
+  "name": "Underworld Swamp Haunted Hands Forest",
+  "color": "#26978C",
+  "rarity": 1,
+  "derivative": "minecraft:warped_forest",
+  "vanillaDerivative": "minecraft:warped_forest",
+  "generators": [
+    {
+      "min": 10,
+      "max": 30,
+      "generator": "mountain"
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/netherrack-basalt",
+  "layers": [
+    "snippet/biome-palette/warped/nylium",
+    "snippet/biome-palette/warped/netherrack-2-4",
+    "snippet/biome-palette/stone/netherrack-basalt-6-18"
+  ],
+  "objects": [
+    {
+      "chance": 0.632,
+      "edit": [
+        "snippet/object-block-replacer/shared/warped-stem-to-warped-stem",
+        "snippet/object-block-replacer/shared/warped-hyphae-to-warped-hyphae",
+        "snippet/object-block-replacer/shared/warped-wart-to-warped-wart"
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/warped/trees/darkoak/generic1",
+        "underworld/warped/trees/darkoak/generic2",
+        "underworld/warped/trees/darkoak/generic3",
+        "underworld/warped/trees/darkoak/generic5",
+        "underworld/warped/trees/darkoak/generic6",
+        "underworld/warped/trees/darkoak/generic7",
+        "underworld/warped/trees/darkoak/generic8",
+        "underworld/warped/trees/darkoak/generic9",
+        "underworld/warped/trees/darkoak/generic10",
+        "underworld/warped/trees/darkoak/generic11"
+      ],
+      "translate": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "yRandom": -5
+      },
+      "mode": "FAST_MIN_STILT"
+    },
+    "snippet/object-placer/warped/boulder-c0-135",
+    "snippet/object-placer/warped/oakclutt-c0-17",
+    "snippet/object-placer/warped/stump-paint-c0-08",
+    "snippet/object-placer/warped/genericgrave-c0-00005"
+  ],
+  "decorators": [
+    {
+      "chance": 0.01,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:warped_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/warped/warped-crimson-fungus-c0-0002",
+    {
+      "chance": 0.45,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "effects": [
+    {
+      "interval": 55656,
+      "sound": "minecraft:ambient.warped_forest.additions",
+      "soundDistance": 3,
+      "volume": 6.2,
+      "minPitch": 1.6,
+      "maxPitch": 1.35,
+      "chance": 11
+    },
+    {
+      "interval": 56565,
+      "sound": "minecraft:ambient.warped_forest.additions",
+      "soundDistance": 3,
+      "volume": 6.2,
+      "minPitch": 0.4,
+      "maxPitch": 0.2,
+      "chance": 5
+    },
+    {
+      "particleAltX": 0.0101,
+      "particleAltY": -0.033885,
+      "particleAltZ": 0.0101,
+      "chance": 1,
+      "particleEffect": "minecraft:warped_spore",
+      "particleOffset": 12,
+      "interval": 640,
+      "particleCount": 0
+    }
+  ],
+  "customDerivitives": [
+    {
+      "id": "underworld_swamp_handy_willow_forest_61591713",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#091C21",
+      "fogColor": "#1A051A",
+      "waterColor": "#238876",
+      "waterFogColor": "#115657",
+      "grassColor": "#2A958A",
+      "foliageColor": "#2A8683",
+      "ambientParticle": {
+        "particle": "minecraft:warped_spore",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp18-nowhere-crack416"
+}

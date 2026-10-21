@@ -1,0 +1,123 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Mountain Plains",
+  "color": "#625A57",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "children": [
+    "mountain/plain-extended",
+    "mountain/mplain-extended"
+  ],
+  "generators": [
+    {
+      "generator": "mountain",
+      "max": 53,
+      "min": 45
+    }
+  ],
+  "wall": "snippet/biome-palette/basalt/wall-blackstone-basalt-gravel-nylium",
+  "layers": [
+    "snippet/biome-palette/basalt/basalt-1-1-slope3-3",
+    "snippet/biome-palette/basalt/gravel-nylium-2-4-steep4",
+    "snippet/biome-palette/basalt/blackstone-2-4-steep4",
+    "snippet/biome-palette/basalt/basalt-1-1-slope4",
+    "snippet/biome-palette/basalt/blackstone-3-3-slope3"
+  ],
+  "objects": [
+    {
+      "mode": "CENTER_HEIGHT",
+      "chance": 0.05,
+      "place": [
+        "underworld/basalt/trees/sproak/sp1",
+        "underworld/basalt/trees/sproak/sp2",
+        "underworld/basalt/trees/sproak/sp3",
+        "underworld/basalt/trees/sproak/sp4",
+        "underworld/basalt/trees/sproak/sp5",
+        "underworld/basalt/trees/sproak/sp6"
+      ]
+    },
+    "snippet/object-placer/basalt/sbush-paint-c0-1",
+    "snippet/object-placer/basalt/sbush-paint-c0-1",
+    "snippet/object-placer/basalt/sbush-paint-c0-1"
+  ],
+  "decorators": [
+    "snippet/decorator/basalt/fungus-sprouts-fire-c0-13-trioctave-z0-3",
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    {
+      "forceBlock": {
+        "block": "minecraft:basalt"
+      },
+      "slopeCondition": {
+        "maximumSlope": 3.3
+      },
+      "variance": {
+        "style": "CELLULAR",
+        "zoom": 0.3,
+        "fracture": {
+          "style": "SIMPLEX",
+          "zoom": 0.2,
+          "multiplier": 10
+        }
+      },
+      "style": {
+        "style": "TRIOCTAVE_SIMPLEX",
+        "zoom": 0.3,
+        "fracture": {
+          "style": "STATIC",
+          "multiplier": 8
+        }
+      },
+      "chance": 0.2,
+      "palette": [
+        {
+          "block": "minecraft:crimson_fungus"
+        }
+      ]
+    },
+    "snippet/decorator/shared/bush",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "childStyle": {
+    "style": "IRIS_DOUBLE",
+    "zoom": 10
+  },
+  "customDerivitives": [
+    {
+      "id": "underworld_mountain_plains_fdad7c68",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#181414",
+      "fogColor": "#685F70",
+      "waterColor": "#CD4814",
+      "waterFogColor": "#4D2010",
+      "grassColor": "#5D504D",
+      "foliageColor": "#6B625E",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "terrain3D": "snippet/terrain-3d/hills/amp22-perlin-crack416"
+}

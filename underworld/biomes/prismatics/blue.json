@@ -1,0 +1,81 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Prismatics Blue",
+  "color": "#544D4A",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "generators": [
+    {
+      "min": 24,
+      "max": 52,
+      "generator": "plain"
+    },
+    {
+      "min": 52,
+      "max": 72,
+      "generator": "highplains"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:warped_wart_block"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "minHeight": 2,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "block": "minecraft:warped_wart_block"
+        }
+      ]
+    },
+    {
+      "minHeight": 4,
+      "maxHeight": 8,
+      "palette": [
+        {
+          "block": "minecraft:warped_wart_block"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/basalt/concretelith-c0-032-wart",
+    "snippet/object-placer/basalt/concretelith-c0-032-wart-x0-5-0-75",
+    "snippet/object-placer/basalt/concretelith-c0-032-wart-x2-4",
+    "snippet/object-placer/basalt/bone-c0-006",
+    "snippet/object-placer/basalt/bonespire-c0-003"
+  ],
+  "lockLayers": true,
+  "customDerivitives": [
+    {
+      "id": "underworld_prismatics_blue_30d00b90",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#161212",
+      "fogColor": "#685F70",
+      "waterColor": "#AB481F",
+      "waterFogColor": "#561F10",
+      "grassColor": "#524744",
+      "foliageColor": "#5E5452",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": "snippet/terrain-3d/mountains/amp32-hexagon-crack392"
+}

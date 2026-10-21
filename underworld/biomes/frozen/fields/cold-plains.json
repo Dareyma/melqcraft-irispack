@@ -1,0 +1,100 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Cold plains",
+  "color": "#607378",
+  "rarity": 1,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "children": [
+    "frozen/fields/mountain-spruce-frosty"
+  ],
+  "childStyle": {
+    "style": "SIMPLEX_CELLS",
+    "zoom": 0.3
+  },
+  "customDerivitives": [
+    {
+      "id": "underworld_frozen_fields_cold_plains_1625db93",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#10161A",
+      "fogColor": "#1B4745",
+      "waterColor": "#6797A0",
+      "waterFogColor": "#274149",
+      "grassColor": "#5F7174",
+      "foliageColor": "#738A8D",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "max": 30,
+      "min": 20
+    },
+    {
+      "generator": "mountain",
+      "max": 5,
+      "min": 1
+    }
+  ],
+  "wall": "snippet/biome-palette/soul/wall-basalt-soul-sand-nylium",
+  "layers": [
+    "snippet/biome-palette/soul/soul-soil-1-1-slope3-3",
+    "snippet/biome-palette/soul/soul-soil-3-3-slope3",
+    "snippet/biome-palette/soul/soul-soil-basalt-3-3-slope3"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/sbush-paint-c0-025",
+    "snippet/object-placer/soul/stone-boulder-paint-c0-055"
+  ],
+  "decorators": [
+    "snippet/decorator/soul/sprouts-soul-fire-c0-13",
+    {
+      "chance": 0.01,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    "snippet/decorator/soul/soul-fire-c0-006",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30103,
+    "amplitude": 14,
+    "horizontalScale": 192,
+    "verticalScale": 44,
+    "densityStyle": {
+      "style": "SIMPLEX"
+    },
+    "crackDepth": 0,
+    "crackWidth": 2,
+    "crackScale": 416,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.34,
+    "slopeFade": 0.42,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

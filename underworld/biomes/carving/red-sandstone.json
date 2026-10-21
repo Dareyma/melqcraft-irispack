@@ -1,0 +1,120 @@
+{
+  "name": "Underworld Red Sandstone Cavern",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 2
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 2
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 2
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 5
+      },
+      {
+        "block": "minecraft:smooth_basalt",
+        "weight": 4
+      },
+      {
+        "block": "minecraft:basalt",
+        "weight": 1
+      }
+    ],
+    "style": {
+      "style": "FRACTAL_WATER",
+      "zoom": 0.72
+    }
+  },
+  "layers": [
+    {
+      "maxHeight": 2,
+      "minHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:soul_sand",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:soul_sand",
+          "weight": 5
+        },
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:netherrack",
+          "weight": 1
+        }
+      ],
+      "style": {
+        "style": "SIMPLEX",
+        "zoom": 0.92
+      }
+    }
+  ],
+  "caveCeilingLayers": [
+    {
+      "maxHeight": 2,
+      "minHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:smooth_basalt",
+          "weight": 8
+        }
+      ]
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/soul/desertpost-landstone-carve-c0-21",
+    "snippet/object-placer/soul/desertpost-rock-carve-c0-165",
+    "snippet/object-placer/soul/rock-boulder-carve-c0-0972-x0-75",
+    "snippet/object-placer/soul/desertpost-rock-carve-c0-0972"
+  ],
+  "caveProfile": "snippet/cave-profile/hollows/sandstone-y700",
+  "caveMinDepthBelowSurface": 4,
+  "decorators": [
+    "snippet/decorator/soul/soul-fire-sprouts-c0-018"
+  ],
+  "children": [
+    "carving/red-sandstone-child"
+  ],
+  "childStyle": {
+    "style": "SIMPLEX",
+    "zoom": 0.7
+  },
+  "childShrinkFactor": 1.3,
+  "color": "#758E92",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_red_sandstone_c93a7819",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#10181A",
+      "fogColor": "#1B4745",
+      "waterColor": "#5A8B91",
+      "waterFogColor": "#243B3D",
+      "grassColor": "#718387",
+      "foliageColor": "#788D92",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

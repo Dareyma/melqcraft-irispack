@@ -1,0 +1,51 @@
+{
+  "name": "Underworld Amethyst Cavern",
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "wall": "snippet/biome-palette/soul/obsidian-crying-glowstone",
+  "layers": [
+    "snippet/biome-palette/soul/obsidian-crying-glowstone-2-2",
+    "snippet/biome-palette/soul/obsidian-crying-glowstone"
+  ],
+  "decorators": [],
+  "caveCeilingLayers": [
+    "snippet/biome-palette/soul/obsidian-crying-glowstone-2-2",
+    "snippet/biome-palette/soul/obsidian-crying-glowstone"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/amethyst-cluster-carve-c0-21-d4",
+    "snippet/object-placer/soul/amethyst-cluster-carve-c0-165-obsidian",
+    "snippet/object-placer/soul/amethyst-cluster-carve-c0-0972",
+    "snippet/object-placer/soul/rock-boulder-carve-c0-0972-x0-75"
+  ],
+  "caveProfile": "snippet/cave-profile/caverns/crystal-billow-y620",
+  "caveMinDepthBelowSurface": 10,
+  "children": [
+    "carving/amethyst-child"
+  ],
+  "childStyle": {
+    "style": "CELLULAR_IRIS_DOUBLE",
+    "zoom": 0.74
+  },
+  "childShrinkFactor": 1.54,
+  "color": "#71848C",
+  "customDerivitives": [
+    {
+      "id": "underworld_carving_amethyst_c079f51d",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#10151A",
+      "fogColor": "#1B4745",
+      "waterColor": "#578186",
+      "waterFogColor": "#2D484B",
+      "grassColor": "#6A7E81",
+      "foliageColor": "#7A9496",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ]
+}

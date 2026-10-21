@@ -1,0 +1,224 @@
+{
+  "entitySpawners": [
+    "nether/surface/basalt-deltas",
+    "nether/cave"
+  ],
+  "name": "Underworld Tundra Magic Forest Cliffs",
+  "color": "#5B514F",
+  "rarity": 1,
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "customDerivitives": [
+    {
+      "id": "underworld_tundra_mountains_extended_cliffs_ed27a1aa",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#171414",
+      "fogColor": "#685F70",
+      "waterColor": "#A95019",
+      "waterFogColor": "#5C1811",
+      "grassColor": "#60524E",
+      "foliageColor": "#6D6560",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "generators": [
+    {
+      "generator": "smooth-dunes",
+      "min": 97,
+      "max": 132
+    },
+    {
+      "generator": "mountain",
+      "max": 14,
+      "min": 8
+    }
+  ],
+  "biomeStyle": {
+    "style": "SIMPLEX"
+  },
+  "wall": "snippet/biome-palette/wall/blackstone-basalt",
+  "layers": [
+    {
+      "minHeight": 3,
+      "maxHeight": 5,
+      "slopeCondition": {
+        "minimumSlope": 6.9
+      },
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:basalt"
+        },
+        {
+          "block": "minecraft:gravel"
+        }
+      ]
+    },
+    {
+      "minHeight": 3,
+      "maxHeight": 5,
+      "slopeCondition": {
+        "minimumSlope": 5.2
+      },
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:gravel"
+        }
+      ]
+    },
+    {
+      "palette": [
+        {
+          "block": "minecraft:basalt"
+        }
+      ]
+    },
+    {
+      "minHeight": 6,
+      "maxHeight": 18,
+      "style": {
+        "style": "NOWHERE"
+      },
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        },
+        {
+          "block": "minecraft:basalt"
+        },
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    "snippet/object-placer/basalt/gravelsplotch-paint-c0-75",
+    "snippet/object-placer/basalt/evergreen-c0-8",
+    "snippet/object-placer/basalt/obelisk-c0-005",
+    {
+      "chance": 0.035,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/basalt/clutter/boulder1",
+        "underworld/basalt/clutter/boulder2",
+        "underworld/basalt/clutter/boulder3",
+        "underworld/basalt/clutter/boulder4",
+        "underworld/basalt/clutter/boulder5",
+        "underworld/basalt/clutter/boulder6",
+        "underworld/basalt/clutter/boulder7",
+        "underworld/basalt/clutter/boulder8",
+        "underworld/basalt/clutter/boulder9",
+        "underworld/basalt/clutter/boulder10",
+        "underworld/basalt/clutter/boulder11",
+        "underworld/basalt/clutter/boulder12",
+        "underworld/basalt/clutter/boulder13",
+        "underworld/basalt/clutter/boulder14",
+        "underworld/basalt/clutter/boulder15"
+      ],
+      "translate": {
+        "x": 0,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "chance": 0.075,
+      "edit": [
+        "snippet/object-block-replacer/shared/crimson-hyphae-to-crimson-hyphae"
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "underworld/basalt/clutter/stump1",
+        "underworld/basalt/clutter/stump2",
+        "underworld/basalt/clutter/stump3",
+        "underworld/basalt/clutter/stump4",
+        "underworld/basalt/clutter/stump5",
+        "underworld/basalt/clutter/stump6"
+      ],
+      "mode": "PAINT"
+    },
+    {
+      "chance": 0.125,
+      "place": [
+        "underworld/basalt/trees/spruce/pine1",
+        "underworld/basalt/trees/spruce/pine2",
+        "underworld/basalt/trees/spruce/pine3",
+        "underworld/basalt/trees/spruce/pine4",
+        "underworld/basalt/trees/spruce/pine5",
+        "underworld/basalt/trees/spruce/pine6",
+        "underworld/basalt/trees/spruce/pine7",
+        "underworld/basalt/trees/spruce/pine8",
+        "underworld/basalt/trees/spruce/pine9",
+        "underworld/basalt/trees/spruce/pine10",
+        "underworld/basalt/trees/spruce/pine11",
+        "underworld/basalt/trees/spruce/pine12"
+      ]
+    }
+  ],
+  "decorators": [
+    "snippet/decorator/shared/fire-sprouts-c0-0077",
+    "snippet/decorator/soul/fire-sprouts-c0-001425-z0-02",
+    "snippet/decorator/shared/fire-ages-c0-0003",
+    {
+      "chance": 0.06,
+      "zoom": 0.3,
+      "palette": [
+        {
+          "block": "minecraft:fire"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "terrain3D": {
+    "enabled": true,
+    "seed": 30113,
+    "amplitude": 44,
+    "horizontalScale": 160,
+    "verticalScale": 48,
+    "densityStyle": {
+      "style": "IRIS_HALF"
+    },
+    "crackDepth": 5,
+    "crackWidth": 2.25,
+    "crackScale": 336,
+    "crackStyle": {
+      "style": "SIMPLEX"
+    },
+    "minimumSlope": 0.16,
+    "slopeFade": 0.3,
+    "fluidClearance": 8,
+    "fluidFade": 24
+  }
+}

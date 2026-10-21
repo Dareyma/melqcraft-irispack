@@ -1,0 +1,144 @@
+{
+  "entitySpawners": [
+    "nether/surface/soul-sand-valley",
+    "nether/cave"
+  ],
+  "name": "Underworld Tundra Redwood Forest",
+  "color": "#67787C",
+  "rarity": 3,
+  "derivative": "minecraft:soul_sand_valley",
+  "vanillaDerivative": "minecraft:soul_sand_valley",
+  "customDerivitives": [
+    {
+      "id": "underworld_tundra_redwood_forest_dda91a1f",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#10161A",
+      "fogColor": "#1B4745",
+      "waterColor": "#609799",
+      "waterFogColor": "#264046",
+      "grassColor": "#6C8184",
+      "foliageColor": "#65757A",
+      "ambientParticle": {
+        "particle": "minecraft:white_ash",
+        "rarity": 45
+      }
+    }
+  ],
+  "children": [
+    "tundra/redwood-extended-cliffs"
+  ],
+  "generators": [
+    {
+      "min": 4,
+      "max": 10,
+      "generator": "smooth-dunes"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:soul_soil"
+      },
+      {
+        "block": "minecraft:soul_soil"
+      },
+      {
+        "block": "minecraft:basalt"
+      },
+      {
+        "block": "minecraft:soul_soil"
+      }
+    ]
+  },
+  "layers": [
+    "snippet/biome-palette/soul/soul-soil-simplex",
+    {
+      "minHeight": 2,
+      "maxHeight": 2,
+      "palette": [
+        {
+          "block": "minecraft:soul_soil"
+        }
+      ]
+    },
+    "snippet/biome-palette/soul/soul-soil-basalt-1-1"
+  ],
+  "objects": [
+    "snippet/object-placer/soul/boulder-paint-c0-4",
+    "snippet/object-placer/soul/sbush-paint-c0-6",
+    "snippet/object-placer/soul/tredwood-c0-35",
+    "snippet/object-placer/soul/srock-paint-c0-32",
+    "snippet/object-placer/soul/tredwoodsmol-c0-45-wart",
+    "snippet/object-placer/soul/spruceclutt-c0-35",
+    "snippet/object-placer/soul/rshrub-c0-15",
+    "snippet/object-placer/soul/tredwoodbee-c0-01",
+    "snippet/object-placer/soul/stump-paint-c0-075-stem-edit"
+  ],
+  "decorators": [
+    "snippet/decorator/soul/soul-fire-roots-c0-001425-z1",
+    "snippet/decorator/soul/soul-fire-c0-003",
+    {
+      "chance": 0.06,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    {
+      "chance": 0.075,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.018,
+      "palette": [
+        {
+          "block": "minecraft:soul_fire"
+        }
+      ]
+    },
+    {
+      "chance": 0.06,
+      "palette": [
+        {
+          "block": "minecraft:warped_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.06,
+      "palette": [
+        {
+          "block": "minecraft:warped_fungus"
+        }
+      ]
+    },
+    {
+      "chance": 0.1,
+      "palette": [
+        {
+          "block": "minecraft:nether_sprouts"
+        }
+      ]
+    },
+    {
+      "chance": 0.05,
+      "palette": [
+        {
+          "block": "minecraft:blackstone_slab"
+        }
+      ]
+    },
+    "snippet/decorator/soul/leaf-litter",
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "childShrinkFactor": 2.4,
+  "terrain3D": "snippet/terrain-3d/rolling/amp10-perlin-crack392"
+}

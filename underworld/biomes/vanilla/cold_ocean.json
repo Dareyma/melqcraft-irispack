@@ -1,0 +1,95 @@
+{
+  "entitySpawners": [
+    "nether/lava",
+    "nether/cave"
+  ],
+  "name": "Underworld Cold Ocean",
+  "color": "#5B534F",
+  "derivative": "minecraft:basalt_deltas",
+  "vanillaDerivative": "minecraft:basalt_deltas",
+  "generators": [
+    {
+      "min": -42,
+      "max": -10,
+      "generator": "mountain"
+    }
+  ],
+  "wall": "snippet/biome-palette/wall/blackstone-smooth-basalt",
+  "layers": [
+    "snippet/biome-palette/soil/blackstone-gravel-2-3-vascular",
+    {
+      "palette": [
+        {
+          "block": "minecraft:blackstone"
+        }
+      ]
+    },
+    "snippet/biome-palette/soil/blackstone-1-3-w2"
+  ],
+  "decorators": [
+    {
+      "chance": 0.0009,
+      "zoom": 1,
+      "palette": [
+        {
+          "block": "minecraft:soul_sand"
+        },
+        {
+          "weight": 2,
+          "block": "minecraft:magma_block"
+        }
+      ]
+    },
+    {
+      "chance": 0.001,
+      "zoom": 5,
+      "palette": [
+        {
+          "block": "minecraft:lava"
+        }
+      ]
+    },
+    {
+      "chance": 0.015,
+      "stackMax": 9,
+      "zoom": 1,
+      "palette": [
+        {
+          "block": "minecraft:lava"
+        }
+      ],
+      "stackMin": 1
+    },
+    "snippet/decorator/shared/magma-c0-01",
+    {
+      "chance": 0.001,
+      "zoom": 1,
+      "palette": [
+        {
+          "block": "minecraft:glowstone"
+        }
+      ]
+    },
+    "snippet/decorator/shared/surface-quartz"
+  ],
+  "slab": "snippet/biome-palette/slab/blackstone-slab-half",
+  "customDerivitives": [
+    {
+      "id": "underworld_vanilla_cold_ocean_20115872",
+      "category": "nether",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "downfallType": "none",
+      "skyColor": "#191615",
+      "fogColor": "#685F70",
+      "waterColor": "#C95415",
+      "waterFogColor": "#4D1B11",
+      "grassColor": "#514844",
+      "foliageColor": "#665E59",
+      "ambientParticle": {
+        "particle": "minecraft:ash",
+        "rarity": 45
+      }
+    }
+  ]
+}
