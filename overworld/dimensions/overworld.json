@@ -11,6 +11,10 @@
   "fluidHeight": 50,
   "version": 4016,
   "name": "Overworld",
+  "datapackImports": [
+  "https://modrinth.com/datapack/dungeons-and-taverns",
+  "https://modrinth.com/datapack/decubed-dungeons"
+  ], 
   "importedStructures": {
     "datapackOverrides": true,
     "adjustments": [
